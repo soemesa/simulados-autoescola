@@ -1,5 +1,4 @@
-let questoes = {};
-
+import {questoes} from './questoes.js';
 
 function montarQuiz() {
     const form = document.getElementById("quizForm");
@@ -8,7 +7,7 @@ function montarQuiz() {
         fieldset.innerHTML = `<legend><b>${disciplina}</b></legend>`;
         questoesDisciplina.forEach((q, i) => {
             let div = document.createElement("div");
-            div.innerHTML = `<p>${i + 1}. ${q.pergunta.replace(/\n/g, '<br>')}</p>`;
+            div.innerHTML = `<p>${i + 1}. ${q.pergunta}</p>`;
             q.alternativas.forEach(alt => {
                 div.innerHTML += `
                 <label>
@@ -41,7 +40,7 @@ function verificar() {
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
 
-function detectarPerguntasRepetidas() {
+/*function detectarPerguntasRepetidas() {
     const perguntasMap = new Map();
     const repetidas = [];
 
@@ -73,7 +72,7 @@ function detectarPerguntasRepetidas() {
     } else {
         console.log("Nenhuma pergunta repetida encontrada.");
     }
-}
+}*/
 
 
 function detectarPerguntasRepetidasNaTela() {
@@ -118,14 +117,6 @@ function detectarPerguntasRepetidasNaTela() {
     div.innerHTML = html;
 }
 
-fetch('questoes.json')
-    .then(response => response.json())
-    .then(data => {
-        questoes = data;
-        montarQuiz();
-        detectarPerguntasRepetidas();
-        detectarPerguntasRepetidasNaTela();
-    })
-    .catch(error => console.error('Erro ao carregar questões:', error));
-
-
+montarQuiz();
+detectarPerguntasRepetidas();
+detectarPerguntasRepetidasNaTela();
