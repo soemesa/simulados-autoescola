@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  line-height: 1.6;
 }
 h2 {
   text-align: center;
@@ -18,7 +19,6 @@ form {
 }
 form p {
   text-align: justify;
-  font-weight: bold;
 }
 fieldset {
   background: #f9f9f9;

@@ -118,5 +118,6 @@ function detectarPerguntasRepetidasNaTela() {
 }
 
 montarQuiz();
+verificar();
 detectarPerguntasRepetidas();
 detectarPerguntasRepetidasNaTela();

@@ -1108,8 +1108,9 @@ export const questoes = {
             correta: "",
         },
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
+            pergunta: `Nas rodovias sem sinalização regulamentadora, a
+                velocidade mínima para os ônibus é de:`,
+            alternativas: ["45 km/h", "60 km/h", "90 km/h", "100 km/h"],
             correta: "",
         },
         {
