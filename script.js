@@ -1,15 +1,17 @@
 const questoes = {
     "Legislação": [
         {
-            pergunta: `As esquerdas estão relacionadas três categorias nas quais os motoristas podem ser habilitados e, 
-            à direita, os tipos de veículos:
+            pergunta: `As esquerdas estão relacionadas três categorias nas quais os motoristas podem
+            ser habilitados e, à direita, os tipos de veículos:
             <br>Categoria
-            <br>I. Categoria A    
-            <br>II. Categoria C   
+            <br>I. Categoria A
+            <br>II. Categoria C
             <br>III. Categoria D
             <br>Veículo
-            <br>1. veículo motorizado utilizado no transporte de carga, com peso bruto total maior do que 3 500 Kg
-            <br>2. veículo motorizado utilizado no transporte de passageiros com capacidade maior do que 8 lugares
+            <br>1. veículo motorizado utilizado no transporte de carga, com peso bruto total maior
+            do que 3 500 Kg
+            <br>2. veículo motorizado utilizado no transporte de passageiros com capacidade maior do
+            que 8 lugares
             <br>3. veículo motorizado de duas ou três rodas
             <br>A correlação correta entre as categorias de habilitação e os veículos correspondentes é:`,
             alternativas: [
@@ -22,7 +24,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `A CNH contem fotografia, identificação, CPF do condutor e data de validade condicionada ao exame 
+            pergunta: `A CNH contem fotografia, identificação, CPF do condutor e data de validade condicionada ao exame
             de aptidão física e mental. Após o vencimento da data de validade, a CNH é válida por, no máximo:`,
             alternativas: [
                 "20 dias",
@@ -89,7 +91,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Encaminhar aos órgãos e entidades executivas de trânsito e executivos rodoviários, informações 
+            pergunta: `Encaminhar aos órgãos e entidades executivas de trânsito e executivos rodoviários, informações
             sobre problemas observados nas autuações e apontados em recursos, e que ocorram sistematicamente, é uma das
             competências:`,
             alternativas: [
@@ -101,7 +103,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `O proprietário alterou as características do seu veículo com o objetivo de participar de 
+            pergunta: `O proprietário alterou as características do seu veículo com o objetivo de participar de
             competições automobilísticas. A circulação desse veículo nas vias públicas é:`,
             alternativas: [
                 "Proibida, e o infrator está sujeito as penalidades cabíveis",
@@ -126,7 +128,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `No que se refere à habilitação para conduzir veículos automotores, considere os requisitos    
+            pergunta: `No que se refere à habilitação para conduzir veículos automotores, considere os requisitos
             <br>I- Ser penalmente imputável;
             <br>II-Possuir Carteira de Identidade ou equivalente
             <br>III– saber ler e escrever.
@@ -153,7 +155,7 @@ const questoes = {
             pergunta: "Ao condutor que tenha Permissão para Dirigir na categoria “B” será conferida a CNH após um ano:",
             alternativas: [
                 "Desde que não tenha cometido nenhuma infração de natureza grave ou gravíssima;",
-                `Desde que não tenha cometido nenhuma infração de natureza grave ou gravíssima, ou seja reincidente 
+                `Desde que não tenha cometido nenhuma infração de natureza grave ou gravíssima, ou seja reincidente
                 em infração média`,
                 "desde que não tenha cometido nenhuma infração;",
                 "desde que não tenha cometido nenhuma infração de natureza Gravíssima."
@@ -161,7 +163,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Com a venda do seu veículo, o proprietário, tem por obrigação informar o Detran ou postos 
+            pergunta: `Com a venda do seu veículo, o proprietário, tem por obrigação informar o Detran ou postos
             avançados, para fugir das Responsabilidades civil e criminal, cabendo ao novo, a incumbência de transferir
             no prazo de:`,
             alternativas: [
@@ -213,7 +215,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Quando não estiverem sinalizadas, as velocidades máximas permitidas nas vias Coletoras, Locais 
+            pergunta: `Quando não estiverem sinalizadas, as velocidades máximas permitidas nas vias Coletoras, Locais
             e Arteriais são, respectivamente:`,
             alternativas: [
                 "50 km/h; 20 km/h e 90 km/h",
@@ -234,7 +236,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `O órgão máximo do Sistema Nacional de Trânsito, que tem as funções consultivas, normativas e 
+            pergunta: `O órgão máximo do Sistema Nacional de Trânsito, que tem as funções consultivas, normativas e
             coordenadoras.`,
             alternativas: ["Detran", "Contradife", "Cetran", "Contran"],
             correta: ""
@@ -270,7 +272,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Um candidato à obtenção da CNH foi aprovado nos exames de habilitação e recebeu a Permissão para 
+            pergunta: `Um candidato à obtenção da CNH foi aprovado nos exames de habilitação e recebeu a Permissão para
             Dirigir. Ao final de um ano, tendo cometido uma infração de natureza grave, ele:`,
             alternativas: [
                 "terá de reiniciar todo o processo de habilitação",
@@ -281,7 +283,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Um candidato a obtenção da CNH, durante o Exame de Direção Veicular para a categoria B, comete 
+            pergunta: `Um candidato a obtenção da CNH, durante o Exame de Direção Veicular para a categoria B, comete
             uma falta grave, com a perda de 3 pontos. Nessas condições, ele será:`,
             alternativas: [
                 "Aprovado, desde que não cometa outra falta média",
@@ -292,7 +294,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `De acordo com a legislação de trânsito, a colocação de películas não refletivas nos vidros dos 
+            pergunta: `De acordo com a legislação de trânsito, a colocação de películas não refletivas nos vidros dos
             automóveis é:`,
             alternativas: [
                 "permitida de acordo com vistoria do DETRAN",
@@ -303,7 +305,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `De acordo com parágrafo 1º do artigo 159 do Código de Trânsito Brasileiro, quando o condutor 
+            pergunta: `De acordo com parágrafo 1º do artigo 159 do Código de Trânsito Brasileiro, quando o condutor
             estiver à direção do veículo, deve obrigatoriamente portar:`,
             alternativas: [
                 "Permissão Dirigir ou CNH e o CPF – Cadastro de Pessoa Física",
@@ -314,7 +316,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Você está em uma via secundaria e vai entrar em uma rodovia de alta velocidade e com grande 
+            pergunta: `Você está em uma via secundaria e vai entrar em uma rodovia de alta velocidade e com grande
             volume de trafego. A forma mais adequada de efetuar essa manobra é:`,
             alternativas: [
                 "Entrar em velocidade reduzida, conforme preceito da Direção Defensiva",
@@ -337,7 +339,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Para dirigir veículo não articulado utilizado no transporte de passageiros com lotação superior 
+            pergunta: `Para dirigir veículo não articulado utilizado no transporte de passageiros com lotação superior
             a 08 lugares, excluindo o motorista, o condutor, deverá estar habilitado na categoria:`,
             alternativas: ["E", "AC", "B", "D"],
             correta: ""
@@ -353,14 +355,14 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Aquela caracterizada por interseções em nível, geralmente controlada por semáforo, com 
+            pergunta: `Aquela caracterizada por interseções em nível, geralmente controlada por semáforo, com
             acessibilidade direta aos lotes lindeiras e sem travessia de pedestres em nível “segundo o Código de Trânsito
             Brasileiro, o texto refere-se ao conceito de via:`,
             alternativas: ["coletora", "arterial", "de trânsito rápido", "rural"],
             correta: ""
         },
          {
-             pergunta: `Um condutor, trafegando em um automóvel por rodovia não sinalizada. Não poderá ter a velocidade 
+             pergunta: `Um condutor, trafegando em um automóvel por rodovia não sinalizada. Não poderá ter a velocidade
             mínima inferior a:`,
             alternativas: ["100 Km/h", "60 Km/h", "55 Km/h", "90 Km/h"],
             correta: ""
@@ -379,16 +381,16 @@ const questoes = {
             pergunta: "A fotocopia da Carteira Nacional de Habilitação:",
             alternativas: [
                 "pode ser plastificada, substituindo o documento original",
-                `é válida quando apresentadas junto com o documento de identidade do portador 
+                `é válida quando apresentadas junto com o documento de identidade do portador
                 e os documentos do veiculo`,
                 "é válida quando apresentada junto com o documento de identidade do portador",
-                `é invalida para substituir o documento original e comprovar o direito de seu 
+                `é invalida para substituir o documento original e comprovar o direito de seu
                 portador de dirigir`
             ],
             correta: ""
         },
         {
-            pergunta: `Dentre as alternativas, qual apresenta funções das Câmaras Temáticas, que 
+            pergunta: `Dentre as alternativas, qual apresenta funções das Câmaras Temáticas, que
             são ligadas ao CONTRAN:  `,
             alternativas: [
                 "Fiscalizar rodovias federais.",
@@ -400,7 +402,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Para que um cidadão obtenha habilitação na categoria “D” é preciso, entre 
+            pergunta: `Para que um cidadão obtenha habilitação na categoria “D” é preciso, entre
             outras exigências que seja maior de:`,
             alternativas: ["21 anos e esteja bem de saúde",
                 "21 anos e esteja habilitado na categ B, no mínimo, 03 anos",
@@ -430,7 +432,7 @@ const questoes = {
             alternativas: [
                 "Que a sinalização de trânsito indica como tais",
                 "Que se destinam apenas ao acesso as áreas restritas",
-                `Bloqueadas ao trânsito local, sem cruzamentos, com entradas e saídas especiais e que 
+                `Bloqueadas ao trânsito local, sem cruzamentos, com entradas e saídas especiais e que
                 permitem trânsito livre`,
                 "Que geram e coletam trânsito para as vias preferenciais ou de trânsito rápido"
             ],
@@ -440,7 +442,7 @@ const questoes = {
             pergunta: "Um condutor de veículo oficial, transportando autoridades, deve saber que esse tipo de veículo:",
             alternativas: [
                 "goza de prioridade no trânsito",
-                `pode ultrapassar o limite de velocidade regulamentado em situações de urgência, desde que acione as luzes 
+                `pode ultrapassar o limite de velocidade regulamentado em situações de urgência, desde que acione as luzes
                 de emergência(pisca-alerta)`,
                 "deve circular obedecendo as regras de transito.",
                 "pode usar a buzina, para ter a passagem"
@@ -448,7 +450,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `O Código de Trânsito Brasileiro prevê, em seu capitulo VI, a educação para o trânsito, e o Sistema 
+            pergunta: `O Código de Trânsito Brasileiro prevê, em seu capitulo VI, a educação para o trânsito, e o Sistema
             Nacional de Trânsito estabelece que a educação para o trânsito, oferecida em todos os níveis de ensino, deve:`,
             alternativas: [
                 "Ter como foco o ser humano e trabalhar para a mudança de comportamentos e atitudes em relação ao trânsito",
@@ -489,7 +491,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `O veículo “A” circula a 90 km/h e o veículo “B” circula a 70 km/h. Considerando que ambos circulam em via arterial, quem 
+            pergunta: `O veículo “A” circula a 90 km/h e o veículo “B” circula a 70 km/h. Considerando que ambos circulam em via arterial, quem
             está desrespeitando a velocidade máxima permitida?`,
             alternativas: ["o veículo B", "nenhum dos dois", "o veículo A", "os dois"],
             correta: ""
@@ -513,9 +515,9 @@ const questoes = {
             pergunta: `Correlacione o tipo de via com velocidade máxima permitida para automóveis, quando não existir sinalização de regulamentação
             de velocidade
             <br>Tipo de via
-            <br>I- Via de trânsito rápido     
-            <br>II-Rodovia                             
-            <br>III-Estrada                           
+            <br>I- Via de trânsito rápido
+            <br>II-Rodovia
+            <br>III-Estrada
             <br>Velocidade máxima
             <br>1- 110 Km/h
             <br>2- 60 km/h
@@ -525,7 +527,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Estabelecer diretrizes da Política Nacional de Trânsito com vistas a segurança, a fluidez, ao conforto na circulação, a defesa 
+            pergunta: `Estabelecer diretrizes da Política Nacional de Trânsito com vistas a segurança, a fluidez, ao conforto na circulação, a defesa
             ambiental e a educação para o trânsito e fiscalizar seu cumprimento é:`,
             alternativas: [
                 "De competência exclusiva dos Departamentos Estaduais de Trânsito – Detran",
@@ -561,7 +563,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `Todo veículo deve ser obrigatoriamente identificado por caracteres gravados no chassi ou no monobloco, reproduzidos em outras partes, 
+            pergunta: `Todo veículo deve ser obrigatoriamente identificado por caracteres gravados no chassi ou no monobloco, reproduzidos em outras partes,
             conforme disposto pelo CONTRAN. Sobre a regravação destes caracteres, é correto afirmar que`,
             alternativas: [
                 "O órgão responsável pela gravação é o DETRAN",
@@ -582,7 +584,7 @@ const questoes = {
             correta: ""
         },
         {
-            pergunta: `O proprietário de um veículo, após a aquisição, permanece por um período de oito anos 
+            pergunta: `O proprietário de um veículo, após a aquisição, permanece por um período de oito anos
             sem proceder qualquer alteração, tanto nas características do veículo como no endereço. Em situações como esta, deve-se efetuar:`,
             alternativas: [
                 "O registro e o licenciamento no ato da compra apenas.",
@@ -596,7 +598,7 @@ const questoes = {
             pergunta: `Três motoristas cometem infrações, conforme descrito abaixo:
             <br>MOTORISTA  TIPO DE VIA  VELOCIDADE REGULAMENTADA (KM/H)  VELOCIDADE DE VEÍCULO (KM/H)
             <br>1 -- Trans. Rápido -- 80 -- 125
-            <br>2 -- Arterial -- 60 -- 91                                   
+            <br>2 -- Arterial -- 60 -- 91
             <br>3 -- Local -- 30 -- 44
             Nessa situação, a suspensão do direito de dirigir será aplicada APENAS:`,
             alternativas: [
@@ -773,7 +775,7 @@ const questoes = {
             correta: "30 km/h."
         },
         {
-            pergunta: `Um candidato à obtenção da Carteira Nacional de Habilitação, durante o exame de 
+            pergunta: `Um candidato à obtenção da Carteira Nacional de Habilitação, durante o exame de
             direção veicular para a categoria A, derruba um cone de balizamento. Nessas condições ele será.`,
             alternativas: [
                 "aprovado, pois atingiu 03 pontos negativos.",
@@ -854,6 +856,103 @@ const questoes = {
             alternativas: ["Arterial", "Vicinal", "Transito rápido", "Coletora"],
             correta: "Transito rápido"
         },
+        {
+            pergunta: `Com relação a CNH e a Permissão para Dirigir, considere:
+            <br>I - A CNH é de porte obrigatório quando o condutor estiver a direção do veículo.
+            <br>II – A Permissão para Dirigir é de porte obrigatório quando o condutor estiver a direção do veiculo
+            <br>III – A CNH pode ser apresentada em cópia reprográfica autenticada pelo DETRAN.
+            <br>É correto o que se afirmar em:`,
+            alternativas: ["I, II e III", "I e III", "I, somente", "I e II"],
+            correta: "I e II"
+        },
+        {
+            pergunta: `No que diz respeito à Permissão para Dirigir, considere:
+            <br>I. Ao candidato aprovado nos exames de habilitação será conferida a Permissão para Dirigir.
+            <br>II. A Permissão para Dirigir tem validade de um ano.
+            <br>III. A Permissão para Dirigir será cassada assim que o condutor cometer a primeira infração de trânsito.
+            <br>É correto o que se afirmar em:`,
+            alternativas: ["I e III", "I, II e III", "I e II", "II e III"],
+            correta: ""
+        },
+        {
+            pergunta: `Para expedição de um novo Certificado de Registro de Veículo, que teve substituição de qualquer
+            equipamento de segurança especificado pelo fabricante, exige-se:`,
+            alternativas: [
+                "a nota fiscal dos equipamentos notificados.",
+                "um certificado de segurança expedido por órgão ou entidade de metrologia legal.",
+                "um certificado de licenciamento expedido por órgão ou entidade de metrologia legal.",
+                "a nota fiscal do serviço executado."
+            ],
+            correta: ""
+        },
+        {
+            pergunta: `No que tange o licenciamento de veículo, considere:
+            <br>I – Todo veículo automotor deve ser licenciado anualmente pelo órgão executivo de transito do Estado ou
+            do Distrito Federal.
+            <br>II – O primeiro licenciamento será feito simultaneamente ao registro do veículo
+            <br>III – O veículo só será licenciado se estiverem quitados os débitos relativos a tributos, encargos e multas
+            de transito e ambientais, vinculadas ao veiculo.
+            <br>É correto o que se AFIRMA EM:`,
+            alternativas: ["I e III", "II e III", "I, II e III", "III"],
+            correta: ""
+        },
+        {
+            pergunta: "Um condutor habilitado na categoria “C” pode dirigir:",
+            alternativas: [
+                "caminhão e ônibus",
+                "caminhão",
+                "automóveis e caminhão",
+                "caminhão e todos veículos de duas rodas"
+            ],
+            correta: ""
+        },
+        {
+            pergunta: "A velocidade compatível com a segurança é:",
+            alternativas: [
+                "de acordo com a situação e sinalização da via, o local e a visibilidade.",
+                "80 km/h, nas vias coletora.",
+                "e a velocidade praticado com segurança.",
+                "é quando você tem o domínio do veiculo."
+            ],
+            correta: ""
+        },
+        {
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },
+        {
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },{
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },
+        {
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },{
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },
+        {
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },{
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },
+        {
+            pergunta: "",
+            alternativas: ["", "", "", ""],
+            correta: ""
+        },
     ],
     "Direção Defensiva": [
         {
@@ -905,9 +1004,6 @@ const questoes = {
     ]
 };
 
- 
-
-
 
 function montarQuiz() {
     const form = document.getElementById("quizForm");
@@ -949,4 +1045,84 @@ function verificar() {
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
 
+function detectarPerguntasRepetidas() {
+    const perguntasMap = new Map();
+    const repetidas = [];
+
+    Object.entries(questoes).forEach(([disciplina, questoesDisciplina]) => {
+        questoesDisciplina.forEach((q, i) => {
+            // Remove espaços extras e quebra de linha para comparar melhor
+            const texto = q.pergunta.replace(/\s+/g, ' ').trim();
+            if (perguntasMap.has(texto)) {
+                repetidas.push({
+                    disciplina,
+                    indice: i,
+                    pergunta: q.pergunta,
+                    original: perguntasMap.get(texto)
+                });
+            } else {
+                perguntasMap.set(texto, { disciplina, indice: i });
+            }
+        });
+    });
+
+    if (repetidas.length > 0) {
+        console.log("Perguntas repetidas encontradas:");
+        repetidas.forEach(rep => {
+            console.log(`Repetida em "${rep.disciplina}" (índice ${rep.indice + 1}):`);
+            console.log(rep.pergunta);
+            console.log(`Primeira ocorrência em "${rep.original.disciplina}" (índice ${rep.original.indice + 1})`);
+            console.log('---');
+        });
+    } else {
+        console.log("Nenhuma pergunta repetida encontrada.");
+    }
+}
+
+
+function detectarPerguntasRepetidasNaTela() {
+    const perguntasMap = new Map();
+    const repetidas = [];
+
+    Object.entries(questoes).forEach(([disciplina, questoesDisciplina]) => {
+        questoesDisciplina.forEach((q, i) => {
+            const texto = q.pergunta.replace(/\s+/g, ' ').trim();
+            if (perguntasMap.has(texto)) {
+                repetidas.push({
+                    disciplina,
+                    indice: i,
+                    pergunta: q.pergunta,
+                    original: perguntasMap.get(texto)
+                });
+            } else {
+                perguntasMap.set(texto, { disciplina, indice: i });
+            }
+        });
+    });
+
+    let html = "<h3>Perguntas repetidas:</h3>";
+    if (repetidas.length > 0) {
+        repetidas.forEach(rep => {
+            html += `<div style="border:1px solid #f00; margin:8px; padding:8px;">
+                <b>Repetida em:</b> ${rep.disciplina} (índice ${rep.indice + 1})<br>
+                <b>Pergunta:</b> ${rep.pergunta}<br>
+                <b>Primeira ocorrência em:</b> ${rep.original.disciplina} (índice ${rep.original.indice + 1})
+            </div>`;
+        });
+    } else {
+        html += "<p>Nenhuma pergunta repetida encontrada.</p>";
+    }
+    // Crie ou use um elemento para mostrar o resultado
+    let div = document.getElementById("repetidas");
+    if (!div) {
+        div = document.createElement("div");
+        div.id = "repetidas";
+        document.body.appendChild(div);
+    }
+    div.innerHTML = html;
+}
+
 montarQuiz();
+detectarPerguntasRepetidas();
+// Chame assim no final do arquivo, se quiser mostrar na tela:
+detectarPerguntasRepetidasNaTela();
