@@ -40,7 +40,7 @@ function verificar() {
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
 
-/*function detectarPerguntasRepetidas() {
+function detectarPerguntasRepetidas() {
     const perguntasMap = new Map();
     const repetidas = [];
 
@@ -72,7 +72,7 @@ function verificar() {
     } else {
         console.log("Nenhuma pergunta repetida encontrada.");
     }
-}*/
+}
 
 
 function detectarPerguntasRepetidasNaTela() {
