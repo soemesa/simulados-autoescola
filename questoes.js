@@ -1,5 +1,5 @@
 export const questoes = {
-    Legislação: [
+    "Legislação Normas Iniciais": [
         {
             pergunta: `As esquerdas estão relacionadas três categorias nas quais
                 os motoristas podem ser habilitados e, à direita, os tipos de

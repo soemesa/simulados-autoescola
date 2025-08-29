@@ -117,6 +117,25 @@ function detectarPerguntasRepetidasNaTela() {
     div.innerHTML = html;
 }
 
+function removerPerguntasRepetidas(questoes) {
+    Object.keys(questoes).forEach(disciplina => {
+        const perguntasUnicas = [];
+        const perguntasSet = new Set();
+        questoes[disciplina].forEach(q => {
+            // Normaliza o texto para comparar
+            const texto = q.pergunta.replace(/\s+/g, ' ').trim().toLowerCase();
+            if (!perguntasSet.has(texto)) {
+                perguntasSet.add(texto);
+                perguntasUnicas.push(q);
+            }
+        });
+        questoes[disciplina] = perguntasUnicas;
+    });
+}
+
+// Chame antes de montar o quiz
+removerPerguntasRepetidas(questoes);
+
 montarQuiz();
 verificar();
 detectarPerguntasRepetidas();
