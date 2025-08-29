@@ -1,63 +1,102 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  padding: 0 20px;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.6;
 }
 h2 {
-  text-align: center;
-  margin-top: 24px;
+    text-align: center;
+    margin-top: 24px;
 }
 form {
-  max-width: 700px;
-  margin: 24px auto;
-  background: #fff;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 2px 8px #0001;
+    max-width: 700px;
+    margin: 24px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px #0001;
 }
 form p {
-  text-align: justify;
+    text-align: justify;
 }
 fieldset {
-  background: #f9f9f9;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 16px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 16px;
 }
 legend {
-  font-size: 1.2em;
-  font-weight: bold;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 label {
-  display: block;
-  margin-bottom: 6px;
+    display: block;
+    margin-bottom: 6px;
 }
 input[type="radio"] {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 #enviar {
-  display: block;
-  margin: 24px auto;
-  padding: 10px 32px;
-  font-size: 1.1em;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s;
+    display: block;
+    margin: 24px auto;
+    padding: 10px 32px;
+    font-size: 1.1em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 #enviar:hover {
-  background: #0056b3;
+    background: #0056b3;
 }
 #resultado {
-  max-width: 700px;
-  margin: 24px auto;
-  background: #e0ffe0;
-  border: 1px solid #8f8;
-  border-radius: 8px;
-  padding: 16px;
+    max-width: 700px;
+    margin: 24px auto;
+    background: #e0ffe0;
+    border: 1px solid #8f8;
+    border-radius: 8px;
+    padding: 24px 24px 16px 24px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px #0001;
+}
+#resultado h4 {
+    margin-top: 18px;
+    color: #007bff;
+}
+#resultado p {
+    margin: 8px 0 12px 0;
+}
+#detalhesBtn {
+    display: block;
+    margin: 24px auto 0 auto;
+    padding: 10px 32px;
+    font-size: 1.1em;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#detalhesBtn:hover {
+    background: #e65100;
+}
+.correta {
+    color: #388e3c;
+    font-weight: bold;
+}
+.errada {
+    color: #d32f2f;
+    font-weight: bold;
+}
+.detalhe-pergunta {
+    margin: 12px 0 18px 0;
+    padding: 12px;
+    border-radius: 6px;
+    background: #f5f5f5;
+    border-left: 4px solid #007bff;
 }
