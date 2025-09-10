@@ -25,14 +25,14 @@ function montarQuiz() {
             fieldset.innerHTML = `<legend><b>${disciplina}</b></legend>`;
             questoesDisciplina.forEach((q, i) => {
                 let div = document.createElement("div");
-                div.innerHTML = `<p>${q.pergunta}</p>`;
+                // Adiciona número da pergunta e mantém a formatação
+                div.innerHTML = `<p><b>Questão ${i + 1}:</b> ${q.pergunta}</p>`;
                 q.alternativas.forEach((alt, idx) => {
                     div.innerHTML += `
-                <label>
-                    <input type="radio" name="q${dIndex}_${i}" value="${alt}"> ${String.fromCharCode(
-                        65 + idx
-                    )}. "${alt}"
-                </label><br>`;
+                    <label>
+                        <input type="radio" name="q${dIndex}_${i}" value="${alt}">
+                        ${String.fromCharCode(65 + idx)}. "${alt}"
+                    </label><br>`;
                 });
                 fieldset.appendChild(div);
             });
@@ -67,28 +67,30 @@ function salvarResultados() {
     );
     // Detalhamento das respostas
     let detalhesHTML = "<h3>Detalhamento das respostas:</h3>";
-    Object.entries(questoes).forEach(([disciplina, questoesDisciplina], dIndex) => {
-        detalhesHTML += `<h4>${disciplina}</h4>`;
-        questoesDisciplina.forEach((q, i) => {
-            let correta = q.correta ? q.correta.trim() : "";
-            detalhesHTML += `<div class="detalhe-pergunta"><b>Questão ${i+1}:</b> ${q.pergunta}<br>`;
-            q.alternativas.forEach((alt, idx) => {
-                const letra = String.fromCharCode(65 + idx);
-                if (alt === correta) {
-                    detalhesHTML += `
-                    <div class="alternativa correta">
-                        ${letra}. "${alt}"
-                    </div>`;
-                } else {
-                    detalhesHTML += `
-                    <div class="alternativa errada">
-                        ${letra}. "${alt}"
-                    </div>`;
-                }
+    Object.entries(questoes).forEach(
+        ([disciplina, questoesDisciplina], dIndex) => {
+            detalhesHTML += `<h4>${disciplina}</h4>`;
+            questoesDisciplina.forEach((q, i) => {
+                detalhesHTML += `<div class="detalhe-pergunta">
+                <b>Questão ${i + 1}:</b> ${q.pergunta}<br>`;
+                q.alternativas.forEach((alt, idx) => {
+                    const letra = String.fromCharCode(65 + idx);
+                    if (alt === q.correta) {
+                        detalhesHTML += `<div><span class="correta">${letra}. "${alt}"</span></div>`;
+                    } else if (
+                        document
+                            .querySelector(
+                                `input[name="q${dIndex}_${i}"]:checked`
+                            )
+                            ?.value.trim() === alt
+                    ) {
+                        detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
+                    }
+                });
+                detalhesHTML += `</div>`;
             });
-            detalhesHTML += `</div><br>`;
-        });
-    });
+        }
+    );
 
     // Salva no localStorage
     localStorage.setItem("resultadoSimulado", resultadoHTML);
