@@ -4,7 +4,9 @@ import { questoes } from "./questoes.js";
 removerPerguntasRepetidas(questoes);
 
 // Monta o quiz na tela
-montarQuiz();
+const disciplinaSelecionada =
+    localStorage.getItem("disciplinaSelecionada") || "todas";
+montarQuiz(disciplinaSelecionada);
 
 // Mostra perguntas repetidas apenas se existirem
 detectarPerguntasRepetidasNaTela();
@@ -59,14 +61,15 @@ function montarQuiz(disciplinaSelecionada = "todas") {
         fieldset.innerHTML = `<legend><b>${disciplina}</b></legend>`;
         questoesDisciplina.forEach((q, i) => {
             let div = document.createElement("div");
-            // Adiciona número da pergunta e mantém a formatação
-            div.innerHTML = `<p><b>Questão ${i + 1}:</b> ${q.pergunta}</p>`;
+            div.innerHTML = `<p><b>Questão ${i + 1}:</b> <b>${
+                q.pergunta
+            }</b></p>`;
             q.alternativas.forEach((alt, idx) => {
                 div.innerHTML += `
-                    <label>
-                        <input type="radio" name="q${dIndex}_${i}" value="${alt}">
-                        ${String.fromCharCode(65 + idx)}. "${alt}"
-                    </label><br>`;
+                <label>
+                    <input type="radio" name="q${dIndex}_${i}" value="${alt}">
+                    ${String.fromCharCode(65 + idx)}. "${alt}"
+                </label><br>`;
             });
             fieldset.appendChild(div);
         });
@@ -210,4 +213,21 @@ document
     .getElementById("menuDisciplina")
     .addEventListener("change", function () {
         montarQuiz(this.value);
+
+        // Esconde o menu e mostra só a disciplina selecionada
+        const menu = document.getElementById("menuDisciplina");
+        const disciplinaSelecionada = menu.options[menu.selectedIndex].text;
+        menu.style.display = "none";
+
+        // Mostra o nome da disciplina escolhida
+        let disciplinaTitulo = document.getElementById("disciplinaSelecionada");
+        if (!disciplinaTitulo) {
+            disciplinaTitulo = document.createElement("h3");
+            disciplinaTitulo.id = "disciplinaSelecionada";
+            menu.parentNode.insertBefore(disciplinaTitulo, menu.nextSibling);
+        }
+        disciplinaTitulo.textContent =
+            disciplinaSelecionada === "Todas as disciplinas"
+                ? "Todas as disciplinas"
+                : `Disciplina: ${disciplinaSelecionada}`;
     });

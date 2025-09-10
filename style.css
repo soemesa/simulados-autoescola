@@ -102,3 +102,21 @@ input[type="radio"] {
     color: #d32f2f;
     font-weight: bold;
 }
+#menuDisciplina {
+    display: block;
+    margin: 32px auto 24px auto;
+    padding: 10px 24px;
+    font-size: 1.2em;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background: #f0f8ff;
+    color: #333;
+    box-shadow: 0 2px 8px #0001;
+    transition: border 0.2s;
+    max-width: 320px;
+}
+
+#menuDisciplina:focus {
+    border-color: #0056b3;
+    outline: none;
+}
