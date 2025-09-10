@@ -1,5 +1,22 @@
 import { questoes } from "./questoes.js";
 
+// Remove perguntas repetidas antes de montar o quiz
+removerPerguntasRepetidas(questoes);
+
+// Monta o quiz na tela
+montarQuiz();
+
+// Mostra perguntas repetidas apenas se existirem
+detectarPerguntasRepetidasNaTela();
+
+// Adiciona evento ao botão "Enviar"
+document.getElementById("enviar").addEventListener("click", function (e) {
+    e.preventDefault();
+    salvarResultados();
+    window.location.href = "resultado.html";
+});
+
+// Função para montar o quiz
 function montarQuiz() {
     const form = document.getElementById("quizForm");
     Object.entries(questoes).forEach(
@@ -8,11 +25,13 @@ function montarQuiz() {
             fieldset.innerHTML = `<legend><b>${disciplina}</b></legend>`;
             questoesDisciplina.forEach((q, i) => {
                 let div = document.createElement("div");
-                div.innerHTML = `<p>${i + 1}. ${q.pergunta}</p>`;
-                q.alternativas.forEach((alt) => {
+                div.innerHTML = `<p>${q.pergunta}</p>`;
+                q.alternativas.forEach((alt, idx) => {
                     div.innerHTML += `
                 <label>
-                    <input type="radio" name="q${dIndex}_${i}" value="${alt}"> ${alt}
+                    <input type="radio" name="q${dIndex}_${i}" value="${alt}"> ${String.fromCharCode(
+                        65 + idx
+                    )}. "${alt}"
                 </label><br>`;
                 });
                 fieldset.appendChild(div);
@@ -22,7 +41,9 @@ function montarQuiz() {
     );
 }
 
-function verificar() {
+// Função para salvar resultados e detalhamento no localStorage
+function salvarResultados() {
+    // Resultado simples
     let resultadoHTML = "<h3>Resultados por disciplina:</h3>";
     Object.entries(questoes).forEach(
         ([disciplina, questoesDisciplina], dIndex) => {
@@ -44,92 +65,37 @@ function verificar() {
             )}</p>`;
         }
     );
-    resultadoHTML += `<button id="detalhesBtn">Ver detalhes</button>`;
-    document.getElementById("resultado").innerHTML = resultadoHTML;
-
-    // Adiciona evento para mostrar detalhes
-    document.getElementById("detalhesBtn").onclick = mostrarDetalhes;
-}
-
-function mostrarDetalhes() {
+    // Detalhamento das respostas
     let detalhesHTML = "<h3>Detalhamento das respostas:</h3>";
-    Object.entries(questoes).forEach(
-        ([disciplina, questoesDisciplina], dIndex) => {
-            detalhesHTML += `<h4>${disciplina}</h4>`;
-            questoesDisciplina.forEach((q, i) => {
-                let marcada = document.querySelector(
-                    `input[name="q${dIndex}_${i}"]:checked`
-                );
-                let correta = q.correta ? q.correta.trim() : "";
-                let respostaUsuario = marcada ? marcada.value.trim() : "";
-                if (correta === "") {
-                    detalhesHTML += `<p><b>${
-                        i + 1
-                    }.</b> <span style="color:gray;">(Sem resposta cadastrada)</span></p>`;
-                    return;
-                }
-                if (respostaUsuario === correta) {
-                    detalhesHTML += `<p><b>${
-                        i + 1
-                    }.</b> <span style="color:green;">Correta ✅</span><br>
-                <b>Pergunta:</b> ${q.pergunta}<br>
-                <b>Sua resposta:</b> ${respostaUsuario}</p>`;
+    Object.entries(questoes).forEach(([disciplina, questoesDisciplina], dIndex) => {
+        detalhesHTML += `<h4>${disciplina}</h4>`;
+        questoesDisciplina.forEach((q, i) => {
+            let correta = q.correta ? q.correta.trim() : "";
+            detalhesHTML += `<div class="detalhe-pergunta"><b>Questão ${i+1}:</b> ${q.pergunta}<br>`;
+            q.alternativas.forEach((alt, idx) => {
+                const letra = String.fromCharCode(65 + idx);
+                if (alt === correta) {
+                    detalhesHTML += `
+                    <div class="alternativa correta">
+                        ${letra}. "${alt}"
+                    </div>`;
                 } else {
-                    detalhesHTML += `<p><b>${
-                        i + 1
-                    }.</b> <span style="color:red;">Errada ❌</span><br>
-                <b>Pergunta:</b> ${q.pergunta}<br>
-                <b>Sua resposta:</b> ${
-                    respostaUsuario || "<i>Não respondida</i>"
-                }<br>
-                <b>Correta:</b> <span style="color:green;">${correta}</span></p>`;
+                    detalhesHTML += `
+                    <div class="alternativa errada">
+                        ${letra}. "${alt}"
+                    </div>`;
                 }
             });
-        }
-    );
-    document.getElementById("resultado").innerHTML = detalhesHTML;
-}
-
-function detectarPerguntasRepetidas() {
-    const perguntasMap = new Map();
-    const repetidas = [];
-
-    Object.entries(questoes).forEach(([disciplina, questoesDisciplina]) => {
-        questoesDisciplina.forEach((q, i) => {
-            // Remove espaços extras e quebra de linha para comparar melhor
-            const texto = q.pergunta.replace(/\s+/g, " ").trim();
-            if (perguntasMap.has(texto)) {
-                repetidas.push({
-                    disciplina,
-                    indice: i,
-                    pergunta: q.pergunta,
-                    original: perguntasMap.get(texto),
-                });
-            } else {
-                perguntasMap.set(texto, { disciplina, indice: i });
-            }
+            detalhesHTML += `</div><br>`;
         });
     });
 
-    if (repetidas.length > 0) {
-        console.log("Perguntas repetidas encontradas:");
-        repetidas.forEach((rep) => {
-            console.log(
-                `Repetida em "${rep.disciplina}" (índice ${rep.indice + 1}):`
-            );
-            console.log(rep.pergunta);
-            console.log(
-                `Primeira ocorrência em "${rep.original.disciplina}" (índice ${
-                    rep.original.indice + 1
-                })`
-            );
-            console.log("---");
-        });
-    } else {
-        console.log("Nenhuma pergunta repetida encontrada.");
-    }
+    // Salva no localStorage
+    localStorage.setItem("resultadoSimulado", resultadoHTML);
+    localStorage.setItem("detalhesSimulado", detalhesHTML);
 }
 
+// Função para detectar perguntas repetidas e mostrar na tela
 function detectarPerguntasRepetidasNaTela() {
     const perguntasMap = new Map();
     const repetidas = [];
@@ -150,8 +116,14 @@ function detectarPerguntasRepetidasNaTela() {
         });
     });
 
-    let html = "<h3>Perguntas repetidas:</h3>";
+    let div = document.getElementById("repetidas");
+    if (!div) {
+        div = document.createElement("div");
+        div.id = "repetidas";
+        document.body.appendChild(div);
+    }
     if (repetidas.length > 0) {
+        let html = "<h3>Perguntas repetidas:</h3>";
         repetidas.forEach((rep) => {
             html += `<div style="border:1px solid #f00; margin:8px; padding:8px;">
                 <b>Repetida em:</b> ${rep.disciplina} (índice ${
@@ -163,25 +135,20 @@ function detectarPerguntasRepetidasNaTela() {
                 } (índice ${rep.original.indice + 1})
             </div>`;
         });
+        div.innerHTML = html;
+        div.style.display = "block";
     } else {
-        html += "<p>Nenhuma pergunta repetida encontrada.</p>";
+        div.innerHTML = "";
+        div.style.display = "none";
     }
-    // Crie ou use um elemento para mostrar o resultado
-    let div = document.getElementById("repetidas");
-    if (!div) {
-        div = document.createElement("div");
-        div.id = "repetidas";
-        document.body.appendChild(div);
-    }
-    div.innerHTML = html;
 }
 
+// Função para remover perguntas repetidas
 function removerPerguntasRepetidas(questoes) {
     Object.keys(questoes).forEach((disciplina) => {
         const perguntasUnicas = [];
         const perguntasSet = new Set();
         questoes[disciplina].forEach((q) => {
-            // Normaliza o texto para comparar
             const texto = q.pergunta.replace(/\s+/g, " ").trim().toLowerCase();
             if (!perguntasSet.has(texto)) {
                 perguntasSet.add(texto);
@@ -191,11 +158,3 @@ function removerPerguntasRepetidas(questoes) {
         questoes[disciplina] = perguntasUnicas;
     });
 }
-
-// Chame antes de montar o quiz
-removerPerguntasRepetidas(questoes);
-
-montarQuiz();
-verificar();
-detectarPerguntasRepetidas();
-detectarPerguntasRepetidasNaTela();

@@ -21,9 +21,8 @@ export const questoes = {
                 "I-1, II-3, III-2",
                 "I-3, II-2, III-1",
                 "I-3, II-1, III-2",
-                "quero saber a resposta",
             ],
-            correta: "",
+            correta: "I-3, II-1, III-2",
         },
         {
             pergunta: `A CNH contem fotografia, identificação, CPF do condutor
@@ -35,9 +34,8 @@ export const questoes = {
                 "45 dias",
                 "30 dias",
                 "06 meses",
-                "quero saber a resposta",
             ],
-            correta: "",
+            correta: "30 dias",
         },
         {
             pergunta: `Nas rodovias sem sinalização de regulamentação, a
@@ -46,11 +44,10 @@ export const questoes = {
             alternativas: [
                 "Motocicletas, caminhão e ônibus",
                 "Automóveis, ônibus e caminhões",
-                " Caminhões, automóveis e ônibus",
+                "Caminhões, automóveis e ônibus",
                 "Ônibus, caminhões e automóveis",
-                "quero saber a resposta",
             ],
-            correta: "",
+            correta: "Automóveis, ônibus e caminhões",
         },
         {
             pergunta: `Ao Departamento de Trânsito (DETRAN), órgão executivo,
@@ -59,10 +56,9 @@ export const questoes = {
                 "Vistoriar, registrar e emplacar veículos",
                 "Alterar as normas de sinalização",
                 "Organizar estatísticas de trânsito em todo o País",
-                `Determinar sobre assuntos relacionados com o transito
-                Internacional`,
+                "Determinar sobre assuntos relacionados com o transito Internacional",
             ],
-            correta: "",
+            correta: "Vistoriar, registrar e emplacar veículos",
         },
         {
             pergunta: `Com o objetivo de aprimorar a formação de condutores de
@@ -79,7 +75,8 @@ export const questoes = {
                 `Comprovem a realização de cursos de direção defensiva e
                 primeiros socorros.`,
             ],
-            correta: "",
+            correta: `Comprovem a realização de cursos de direção defensiva e
+                primeiros socorros.`,
         },
         {
             pergunta: `As características dos veículos, suas especificações
@@ -91,7 +88,7 @@ export const questoes = {
                 "Pelos Departamentos Estaduais de Trânsito – DETRAN",
                 "Pelo Ministérios da Ciência e Tecnologia",
             ],
-            correta: "",
+            correta: "Pelo Conselho Nacional de Trânsito – CONTRAN",
         },
         {
             pergunta: "A CNH permite a quem a possuir o direito de dirigir: ",
@@ -100,11 +97,12 @@ export const questoes = {
                 localidade onde foi emitida;`,
                 `Veículos automotores, para os quais foi habilitado, em todo
                 território nacional;`,
-                "Qualquer tipo de veículo automotor;",
+                `Qualquer tipo de veículo automotor;`,
                 `Qualquer tipo de veículo, apenas na localidade onde foi
                 emitida.`,
             ],
-            correta: "",
+            correta: `Veículos automotores, para os quais foi habilitado, em
+                todo território nacional;`,
         },
         {
             pergunta: `Encaminhar aos órgãos e entidades executivas de trânsito
@@ -117,7 +115,8 @@ export const questoes = {
                 "das Juntas Administrativas de Recursos de Infrações – Jari",
                 "do Departamento Nacional de Trânsito – Denatran.",
             ],
-            correta: "",
+            correta: `das Juntas Administrativas de Recursos de Infrações –
+                Jari`,
         },
         {
             pergunta: `O proprietário alterou as características do seu veículo
@@ -131,7 +130,8 @@ export const questoes = {
                 `Proibida, pois esse tipo de veículos não é permitido quaisquer
                 alterações`,
             ],
-            correta: "",
+            correta: `Permitida, apenas com licença especial da autoridade de
+                trânsito e em itinerário e horário fixados`,
         },
         {
             pergunta: `Três candidatos a obtenção da CNH tiveram o seguinte
@@ -146,7 +146,7 @@ export const questoes = {
                 "pelos candidatos 1 e 2",
                 "pelo candidato 2",
             ],
-            correta: "",
+            correta: "pelos candidatos 1, 2 e 3",
         },
     ],
     "Direção Defensiva": [
@@ -162,7 +162,7 @@ export const questoes = {
                 `reduzir a velocidade e acionar os faróis altos do veículo, com
                 vistas a viabilizar a segurança dos pedestres`,
                 `reduzir a velocidade e aplicar pequenos toques na buzina, com
-                vistas a viabilizar a segurança dos pedestres`
+                vistas a viabilizar a segurança dos pedestres`,
             ],
             correta: `reduzir a velocidade ou parar o veículo, com vistas a
                 viabilizar a segurança dos pedestres`,
@@ -177,7 +177,7 @@ export const questoes = {
                 prever situações de riscos`,
                 `as previsões devem estar sempre em primeiro plano, por questões
                 de segurança do condutor`,
-                "nenhuma das questões acima"
+                "nenhuma das questões acima",
             ],
             correta: `o condutor não precisa estar atento as condições do tempo
                 para prever situações de riscos`,
@@ -189,7 +189,7 @@ export const questoes = {
                 "buracos e pernoite",
                 "chuvas e curvas",
                 "tipo de pavimentação e acostamento",
-                "rodovias menores e congestionamento"
+                "rodovias menores e congestionamento",
             ],
             correta: "tipo de pavimentação e acostamento",
         },
@@ -200,7 +200,7 @@ export const questoes = {
                 "Imprudência",
                 "Falta de atenção e fadiga.",
                 "Falta de habilitado por conta do condutor.",
-                "Motorista desatento a sinalização."
+                "Motorista desatento a sinalização.",
             ],
             correta: "Imprudência.",
         },
@@ -217,7 +217,12 @@ export const questoes = {
                 obrigatório manter o farol aceso quando em circulação, durante
                 o dia ou a noite.
                 <br>É correto o que consta em:`,
-            alternativas: ["I, II e III", "I e III", "II e III", "I"],
+            alternativas: [
+                "I, II e III",
+                "I e III",
+                "II e III",
+                "I",
+            ],
             correta: "I e III",
         },
         {
@@ -227,7 +232,7 @@ export const questoes = {
                 `Percebe antecipadamente os riscos e age prontamente para
                 evita-los ou controla-los`,
                 "Calibra os pneus de seu veículo diariamente",
-                "Mantém seu veículo em ordem"
+                "Mantém seu veículo em ordem",
             ],
             correta: `Percebe antecipadamente os riscos e age prontamente para
                 evita-los ou controla-los`,
@@ -242,7 +247,7 @@ export const questoes = {
                 "Acionar o farol alto para se ter uma visão melhor da via",
                 `Reduzir a velocidade, pois a fuligem proveniente da queimada
                 pode reduzir a aderência do veículo ao piso.`,
-                "Acionar a luz de posição e seguir viagem, não no perigo"
+                "Acionar a luz de posição e seguir viagem, não no perigo",
             ],
             correta: `Reduzir a velocidade, pois a fuligem proveniente da
                 queimada pode reduzir a aderência do veículo ao piso.`,
@@ -257,7 +262,7 @@ export const questoes = {
                 `Acionar os freios de serviço (pedal) e colocar o veículo
                 simultaneamente em ponto morto;`,
                 `Acionar o freio de estacionamento (mão) e engatar a 1ª marcha,
-                mantendo a embreagem levemente solta para sair mais rápido.`
+                mantendo a embreagem levemente solta para sair mais rápido.`,
             ],
             correta: `Acionar os freios de serviço (pedal) e colocar o veículo
                 simultaneamente em ponto morto;`,
@@ -270,7 +275,7 @@ export const questoes = {
                 quadril ao mesmo tempo;`,
                 "O cinto de três pontos é ineficaz;",
                 "O cinto pélvico é aquele que se prende à cintura;",
-                "O cinto torácico é aquele que se prende ao peito."
+                "O cinto torácico é aquele que se prende ao peito.",
             ],
             correta: "O cinto de três pontos é ineficaz;",
         },
@@ -280,11 +285,11 @@ export const questoes = {
                 `Guarda distância de segurança entre o veículo que dirige e o
                 que segue a sua frente`,
                 `ultrapassa veículo lento em uma curva em pista de mão dupla sem
-                sinalização horizontal`,
+                sinalização`,
                 `conhece e troca sozinho peças defeituosas do seu veículo
                 mantendo-o seguro e bem conservado.`,
                 `calibra periodicamente a pressão dos pneus mantendo-a acima dos
-                valores especificados pelo fabricante.`
+                valores especificados pelo fabricante.`,
             ],
             correta: `Guarda distância de segurança entre o veículo que dirige e
                 o que segue a sua frente`,
@@ -303,7 +308,12 @@ export const questoes = {
                 <br>III - Definir um local para melhor colocação do triângulo.
                 <br>São condutas de primeiros socorros consideradas corretas as
                 descritas em:`,
-            alternativas: ["I e II", "I e III", "I, II e III", "II e III"],
+            alternativas: [
+                "I e II",
+                "I e III",
+                "I, II e III",
+                "II e III",
+            ],
             correta: "II e III",
         },
         {
@@ -313,10 +323,10 @@ export const questoes = {
                 cardíacos;`,
                 "Conversa com naturalidade, mas ofegantemente;",
                 "Está consciente, mas se debate;",
-                "Está sempre consciente e apresentando batimentos cardíacos."
+                "Está sempre consciente e apresentando batimentos cardíacos.",
             ],
-            correta: `Apresenta ausência de movimentos respiratórios e de batimentos
-                cardíacos;`,
+            correta: `Apresenta ausência de movimentos respiratórios e de
+                batimentos cardíacos;`,
         },
         {
             pergunta: "Para realizar reanimação cardiopulmonar deve-se: ",
@@ -327,7 +337,7 @@ export const questoes = {
                 "transportar a vítima antes de quaisquer procedimentos;",
                 `Manter a vítima deitada de lado e aguardar o socorro
                 profissional;`,
-                "Colocar a vítima de bruços e massagear as costas."
+                "Colocar a vítima de bruços e massagear as costas.",
             ],
             correta: `colocar a vítima com as costas ao chão, liberar vias
                 respiratórias, realizar respiração, certifica e compressões ao
@@ -342,7 +352,7 @@ export const questoes = {
                 `Se o seu veículo estiver transportando criança você não deve
                 socorrer;`,
                 `Se não foi você o causador não precisa ajudar, pois você não é
-                responsável`
+                responsável`,
             ],
             correta: `Além de ser uma irresponsabilidade é crime previsto no Código
                 de Trânsito Brasileiro;`,
@@ -357,7 +367,7 @@ export const questoes = {
                 "80 metros longos de um adulto",
                 "40 passos longos de um adulto",
                 "40 metros longos de um adulto",
-                "80 passos longos de um adulto"
+                "80 passos longos de um adulto",
             ],
             correta: "80 passos longos de um adulto",
         },
@@ -370,7 +380,7 @@ export const questoes = {
                 de fratura exposta.`,
                 "Quando o osso quebra internamente",
                 `O osso não se quebra e há o rompimento da pele, é o que
-                chamamos de fratura interna`
+                chamamos de fratura interna`,
             ],
             correta: `O osso se quebra e há o rompimento da pele, é o que
                 chamamos de fratura exposta.`,
@@ -384,7 +394,7 @@ export const questoes = {
                 "Manter a vítima em pé para não perde o controle da situação;",
                 `Se a vítima estiver tendo vomito manter a cabeça da mesma para
                 cima;`,
-                "Fazer massagem cardíaca."
+                "Fazer massagem cardíaca.",
             ],
             correta: `Retirar da boca da vítima objetos, dentaduras, pontes, aparelho
                 dental, etc.;`,
@@ -398,7 +408,12 @@ export const questoes = {
                 <br>II - Remover as vítimas do veículo
                 <br>III - Informar, ouvir, aceitar e ser solidário com a vítima
                 <br>É correto que consta em:`,
-            alternativas: ["I e III", "I e II", "I, II e III", "II e III"],
+            alternativas: [
+                "I e III",
+                "I e II",
+                "I, II e III",
+                "II e III",
+            ],
             correta: "I e III",
         },
         {
@@ -452,8 +467,8 @@ export const questoes = {
             alternativas: [
                 "Os condutores de alguns veículos automotores;",
                 "Motoristas, pedestres e passageiros;",
-                "condutores veículos que transportam Cargas Perigosas;",
-                "Apenas os motociclistas."
+                "Condutores de veículos que transportam Cargas Perigosas;",
+                "Apenas os motociclistas.",
             ],
             correta: "Motoristas, pedestres e passageiros;",
         },
@@ -464,7 +479,7 @@ export const questoes = {
                 ambiente`,
                 "As normas do Código de Trânsito Brasileiro",
                 "As normas do CONAMA (Conselho Nacional do Meio Ambiente)",
-                "Todas as alternativas estão corretas"
+                "Todas as alternativas estão corretas",
             ],
             correta: "Todas as alternativas estão corretas",
         },
@@ -476,10 +491,9 @@ export const questoes = {
                 pedestres.`,
                 "Enviarmos as mercadorias que produzimos.",
                 "Recebermos os produtos que consumimos.",
-                "Todas as alternativas"
+                "Todas as alternativas",
             ],
             correta: "Todas as alternativas",
-
         },
         {
             pergunta: `O CONAMA e as agências ambientais do estado e do
@@ -488,7 +502,8 @@ export const questoes = {
                 "A conservação dos equipamentos de segurança das estradas.",
                 "A orientação do fluxo de veículos nas vias urbanas.",
                 "A fiscalização da produção de veículos.",
-                "A defesa da saúde e do meio ambiente."],
+                "A defesa da saúde e do meio ambiente.",
+            ],
             correta: "A defesa da saúde e do meio ambiente.",
         },
         {
@@ -498,7 +513,7 @@ export const questoes = {
                 "Ao excesso de veículos em circulação.",
                 "Há maior dificuldade de dispersão dos poluentes.",
                 "Há maior emissão de poluentes.",
-                "Há desregularem dos motores causada pelo frio."
+                "Há desregularem dos motores causada pelo frio.",
             ],
             correta: "Há maior dificuldade de dispersão dos poluentes.",
         },
@@ -508,7 +523,7 @@ export const questoes = {
                 "Doenças do aparelho digestivo.",
                 "Doenças respiratórias.",
                 "Alterações visuais.",
-                "Dores de cabeça."
+                "Dores de cabeça.",
             ],
             correta: "Doenças respiratórias.",
         },
@@ -519,9 +534,10 @@ export const questoes = {
                 "Os órgãos e entidades do Sistema Nacional de Trânsito.",
                 "As autoescolas, apenas.",
                 "As escolas de 1º e 2º graus, apenas.",
-                "O DETRAN - Departamento Estadual de Trânsito, apenas."
+                "O DETRAN - Departamento Estadual de Trânsito, apenas.",
             ],
-            correta: "Os órgãos e entidades do Sistema Nacional de Trânsito.",
+            correta:
+                "Os órgãos e entidades do Sistema Nacional de Trânsito.",
         },
         {
             pergunta: `O catalisador, dispositivo de controle de emissão de
@@ -530,7 +546,7 @@ export const questoes = {
                 "Diminuir o ruído do motor.",
                 "Economizar combustível.",
                 "Diminuir a emissão de gases.",
-                "Aumentar a potência do motor"
+                "Aumentar a potência do motor",
             ],
             correta: "Diminuir a emissão de gases.",
         },
@@ -544,7 +560,7 @@ export const questoes = {
                 Governo`,
                 "Valorizar comportamentos necessários a segurança do trânsito",
                 "Não depende do comportamento das pessoas",
-                "Sempre o trânsito e governo, independeram das pessoas"
+                "Sempre o trânsito e governo, independeram das pessoas",
             ],
             correta: `Valorizar comportamentos necessários a segurança do
                 trânsito`,
@@ -559,7 +575,8 @@ export const questoes = {
                 "Permitir ligar o veículo mais facilmente",
                 "Facilitar o funcionamento do motor",
                 `Ligar e desligar a força motriz do motor da parte restante da
-                transmissão`],
+                transmissão`,
+            ],
             correta: `Ligar e desligar a força motriz do motor da parte restante
                 da transmissão`,
         },
@@ -575,7 +592,7 @@ export const questoes = {
                 `Poderão causar a perda de controle do veículo, principalmente
                 frenagens e curvas`,
                 `Poderá ocorrer esvaziamento da água do radiador, fundindo o
-                motor`
+                motor`,
             ],
             correta: `Poderão causar a perda de controle do veículo, principalmente
                 frenagens e curvas`,
@@ -588,7 +605,7 @@ export const questoes = {
                 `Embreagem e a eficiência dos freios, acionando os pedais com a
                 máxima pressão`,
                 "Eficiência dos freios, acionando lentamente o freio de mão",
-                "Eficência dos freios, acionando o pedal com máxima pressão"
+                "Eficiência dos freios, acionando o pedal com máxima pressão",
             ],
             correta: `Eficiência dos freios, acionando o pedal com simples
             toques`,
@@ -614,7 +631,7 @@ export const questoes = {
                 "O comutador de ignição está danificado",
                 "O fusível do sistema está queimado",
                 "A bateria do veículo está com meio carga",
-                "Há uma lâmpada deste sistema queimada"
+                "Há uma lâmpada deste sistema queimada",
             ],
             correta: "Há uma lâmpada deste sistema queimada",
         },
@@ -626,7 +643,7 @@ export const questoes = {
                 "Nas rodas dianteiras é menor que na traseira",
                 "É unifome entre as rodas",
                 "É aplicada somente nas rodas dianteiras",
-                "Nas rodas traseiras é menor que na dianteira"
+                "Nas rodas traseiras é menor que na dianteira",
             ],
             correta: "É aplicada somente nas rodas dianteiras",
         },
@@ -640,7 +657,7 @@ export const questoes = {
                 "Substituir a bateria por uma nova",
                 "Completar com água destilada",
                 "Aumentar a amperagem do regulador",
-                "Completar com água e aditivo"
+                "Completar com água e aditivo",
             ],
 
             correta: "Completar com água destilada",
@@ -651,7 +668,7 @@ export const questoes = {
                 "Simplesmente abra o capô e retirar",
                 "Soltar primeiro o cabo do negativo e depois o do positivo",
                 "Soltar primeiro o cabo do positivo e depois o do negativo",
-                "Não sei como proceder para retirar"
+                "Não sei como proceder para retirar",
             ],
             correta: `Soltar primeiro o cabo do negativo e depois o do
                 positivo`,
@@ -665,7 +682,7 @@ export const questoes = {
                 "Colocar a marcha em ponto morto",
                 `Virar o volante para o lado inverso do pneu furado e puxar o
                 freio de mão`,
-                "Virar o volante para um lado e para o outro sucessivamente"
+                "Virar o volante para um lado e para o outro sucessivamente",
             ],
             correta: `Deixar o carro perder velocidade por si só, segurando
                 firmemente o volante e, depois, frear suavemente`,
@@ -676,9 +693,11 @@ export const questoes = {
                 "Gerar movimento às rodas",
                 "Aumentar a potência do motor",
                 "Armazenar e fornecer corrente elétrica",
-                "Regular a potência do motor"
+                "Regular a potência do motor",
             ],
             correta: "Armazenar e fornecer corrente elétrica",
         },
     ],
 };
+
+
