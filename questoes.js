@@ -148,1814 +148,537 @@ export const questoes = {
             ],
             correta: "",
         },
-        {
-            pergunta: `No que se refere à habilitação para conduzir veículos
-                automotores, considere os requisitos
-                <br>I- Ser penalmente imputável;
-                <br>II-Possuir Carteira de Identidade ou equivalente
-                <br>III– saber ler e escrever.
-                <br>É correto o que se afirmar em:`,
-            alternativas: ["I", "I e II", "II e III", "I, II e III"],
-            correta: "",
-        },
-        {
-            pergunta: "A idade mínima de 21 anos é exigida aos condutores:",
-            alternativas: [
-                "De transporte coletivo de passageiros e de produtos perigosos",
-                "De motocicletas com mais de 180 cg;",
-                "De transportes de cargas;",
-                "De transportes de perecíveis.",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Ao condutor que tenha Permissão para Dirigir na categoria
-                'B' será conferida a CNH após um ano:`,
-            alternativas: [
-                `Desde que não tenha cometido nenhuma infração de natureza grave
-                ou gravíssima;`,
-                `Desde que não tenha cometido nenhuma infração de natureza grave
-                ou gravíssima, ou seja reincidente em infração média`,
-                "desde que não tenha cometido nenhuma infração;",
-                `desde que não tenha cometido nenhuma infração de natureza
-                Gravíssima.`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Com a venda do seu veículo, o proprietário, tem por
-                obrigação informar o Detran ou postos avançados, para fugir das
-                Responsabilidades civil e criminal, cabendo ao novo, a
-                incumbência de transferir no prazo de:`,
-            alternativas: ["25 dias", "15 dias", "30 Dias", "31 dias"],
-            correta: "",
-        },
-        {
-            pergunta: `Quando estiver completado um ano, o condutor receberá a
-                CNH definitiva, que será renovado de:`,
-            alternativas: [
-                "de 5 em 5 anos até 65 anos",
-                "De 10 em 10 anos até 70 anos",
-                "De 5 em 5 anos até 60 anos",
-                "Após 70 anos de 3 em 3 anos",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: "A validade da Permissão para Dirigir é de:",
-            alternativas: ["06 meses", "03 meses", "02 anos", "01 anos"],
-            correta: "",
-        },
-        {
-            pergunta: `Se o candidato reprovar nos exames teóricos e práticos,
-                quando poderá refazer o teste:`,
-            alternativas: ["05 dias", "10 dias", "15 dias", "20 dias"],
-            correta: "",
-        },
-        {
-            pergunta: `A via pública urbana aberta à circulação de acordo com
-                sua utilização classifica-se em:`,
-            alternativas: [
-                "Local, estrada, arterial e rodovia",
-                "Rodovia, coletora, local e estrada",
-                "Transito rápido, arterial, coletora e local",
-                "Transito rápido, rodovia, coletora e local",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Organizar e manter o Registro Nacional de Veículos
-                Automotores – RENAVAM é de competência:`,
-            alternativas: [
-                "Do Conselho Nacional de Trânsito – Contran",
-                "Do Conselho Estadual de Trânsito – Cetran",
-                "Do Órgão máximo executivo de trânsito da União",
-                "Do Departamento de Trânsito – Detran",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Quando não estiverem sinalizadas, as velocidades máximas
-                permitidas nas vias Coletoras, Locais e Arteriais são,
-                respectivamente:`,
-            alternativas: [
-                "50 km/h; 20 km/h e 90 km/h",
-                "60 km/h; 40 km/h e 60 km/h",
-                "40 km/h; 30 km/h e 60 km/h",
-                "60 km/h; 80 km/h e 30 km/h",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Para fazer mudança de categoria de CNH, o condutor não
-                poderá apresentar os seguintes requisitos: `,
-            alternativas: [
-                "Ter 21 anos e casado, para habilitação D ou E",
-                `Ter sido multados nos últimos 12 meses, as infrações.
-                Gravíssima, Grave e reincidente na média.`,
-                `Não ter sido multado nos 12 meses as infrações gravíssimas e
-                grave`,
-                "Faz a mudança direto no Detran.",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O órgão máximo do Sistema Nacional de Trânsito, que tem
-                as funções consultivas, normativas e coordenadoras.`,
-            alternativas: ["Detran", "Contradife", "Cetran", "Contran"],
-            correta: "",
-        },
-        {
-            pergunta: "A aprendizagem somente poderá realizar-se: ",
-            alternativas: [
-                `Nos termos, horários e locais estabelecidos pela autoridade de
-                trânsito`,
-                `No perímetro urbano e nas estadas, nos horários estabelecidos
-                pela autoridade de trânsito`,
-                "Das 8:00 horas às 18:00 horas, em qualquer local",
-                "Somente no período matutino",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Em uma rodovia não sinalizada, o condutor poderá atingir
-                a velocidade máxima de:`,
-            alternativas: [
-                "60 km/h para automóveis, utilitários e motocicletas",
-                "80 km/h para automóveis e caminhonetes",
-                "110 km/h para caminhões",
-                "90 km/h para ônibus e micro-ônibus",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Segundo o Código de Trânsito Brasileiro, a identificação
-                externa de um veículo é feita por meios:`,
-            alternativas: [
-                "do número do chassi, gravado obrigatoriamente nos vidros",
-                "Da placa traseira, com caracteres iguais ao do registro",
-                "Do Registro de Propriedade do Veiculo",
-                `Das placas dianteira e traseira, com caracteres iguais aos do
-                documento do veiculo`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Um candidato à obtenção da CNH foi aprovado nos exames
-                de habilitação e recebeu a Permissão para Dirigir. Ao final de
-                um ano, tendo cometido uma infração de natureza grave, ele:`,
-            alternativas: [
-                "terá de reiniciar todo o processo de habilitação",
-                "Será submetido a curso de reciclagem",
-                "Manterá a Permissão para Dirigir por mais um ano",
-                "Receberá a CNH e a multa correspondente à infração",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Um candidato a obtenção da CNH, durante o Exame de
-                Direção Veicular para a categoria B, comete uma falta grave,
-                com a perda de 3 pontos. Nessas condições, ele será:`,
-            alternativas: [
-                "Aprovado, desde que não cometa outra falta média",
-                `Aprovado, desde que não cometa nenhuma outra falta, de qualquer
-                natureza`,
-                `Reprovado, pois é considerado uma falta grave, eliminação
-                automático`,
-                `Reprovado, pois é considerado, falta de conhecimento de pratica
-                de direção`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `De acordo com a legislação de trânsito, a colocação de
-                películas não refletivas nos vidros dos automóveis é:`,
-            alternativas: [
-                "permitida de acordo com vistoria do DETRAN",
-                `permitida, desde que observadas as condições estabelecidas pelo
-                CONTRAN.`,
-                "proibida no para-brisa e permitida nos demais vidros",
-                `permitida, desde que observadas as condições estabelecidas pelo
-                DETRAN`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `De acordo com parágrafo 1º do artigo 159 do Código de
-                Trânsito Brasileiro, quando o condutor estiver à direção do
-                veículo, deve obrigatoriamente portar:`,
-            alternativas: [
-                "Permissão Dirigir ou CNH e o CPF – Cadastro de Pessoa Física",
-                `Permissão para Dirigir ou CNH, a Carteira de Identidade e o
-                CPF`,
-                "Permissão para Dirigir ou CNH e a Carteira Profissional",
-                "Permissão para Dirigir ou CNH, somente",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Você está em uma via secundaria e vai entrar em uma
-                rodovia de alta velocidade e com grande volume de trafego. A
-                forma mais adequada de efetuar essa manobra é:`,
-            alternativas: [
-                `Entrar em velocidade reduzida, conforme preceito da Direção
-                Defensiva`,
-                `Sinalizar, ganhar velocidade na pista de aceleração (se houver)
-                ou na faixa da direita, de forma a entrar na pista já em
-                velocidade compatível com a da rodovia, diminuindo o risco de
-                'fechar' os demais veiculos.`,
-                `Entrar na rodovia e, logo em seguida, se encaminhar para a
-                faixa da esquerda`,
-                `Entrar na faixa da direta da rodovia e então acelerar para
-                ganhar velocidade, conforme regra do CTB.`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Com o veículo em circulação, um dos documentos de porte
-            obrigatório é:`,
-            alternativas: [
-                "O documento de habilitação em plena validade",
-                "A apólice de seguro contra roubo e furto de veículo",
-                `O documento de habilitação acompanhado da carteira de
-                identidade`,
-                "O manual do proprietário entregue pelo fabricante",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Para dirigir v"eículo não articulado utilizado no
-                transporte de passageiros com lotação superior a 08 lugares,
-                excluindo o motorista, o condutor, deverá estar habilitado na
-                categoria:`,
-            alternativas: ["E", "AC", "B", "D"],
-            correta: "",
-        },
-        {
-            pergunta: "As leis de trânsito foram feitas para:",
-            alternativas: [
-                "Somente canalização para melhorar o fluxo de veículos,",
-                "Tentar melhorar a vida dos pedestres",
-                "Pedestres, motoristas e demais usuários das vias terrestres.",
-                "Apenas para veículos",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Aquela caracterizada por interseções em nível, geralmente
-                controlada por semáforo, com acessibilidade direta aos lotes
-                lindeiras e sem travessia de pedestres em nível “segundo o
-                Código de Trânsito Brasileiro, o texto refere-se ao conceito de
-                via:`,
-            alternativas: [
-                "coletora",
-                "arterial",
-                "de trânsito rápido",
-                "rural",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Um condutor, trafegando em um automóvel por rodovia não
-                sinalizada. Não poderá ter a velocidade mínima inferior a:`,
-            alternativas: ["100 Km/h", "60 Km/h", "55 Km/h", "90 Km/h"],
-            correta: "",
-        },
-        {
-            pergunta: `Sãos Órgãos normativos e consultivos do Sistema Nacional
-                de Trânsito:`,
-            alternativas: [
-                "CONTRAN, CETRAN E CAMARAS TECNICAS",
-                "CONTRAN, DENATRAN E DETRAN",
-                "DENATRAN, DETRAN E CONTRADIFE",
-                "CONTRAN, CETRAN E CONTRADIFE",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: "A fotocopia da Carteira Nacional de Habilitação:",
-            alternativas: [
-                "pode ser plastificada, substituindo o documento original",
-                `é válida quando apresentadas junto com o documento de
-                identidade do portador e os documentos do veiculo`,
-                `é válida quando apresentada junto com o documento de identidade
-                do portador`,
-                `é invalida para substituir o documento original e comprovar o
-                direito de seu portador de dirigir`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Dentre as 'alternativas', qual apresenta funções das
-                Câmaras Temáticas, que são ligadas ao CONTRAN:`,
-            alternativas: [
-                "Fiscalizar rodovias federais.",
-                "Gerenciar infraestrutura rodoferroviária.",
-                " Estipular prazos para o cumprimento de obras.",
-                "Auxiliar e legislar na esfera da União.",
-                "Debates em cima de possíveis mudanças na lei.",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Para que um cidadão obtenha habilitação na categoria 'D'
-                é preciso, entre outras exigências que seja maior de:`,
-            alternativas: [
-                "21 anos e esteja bem de saúde",
-                "21 anos e esteja habilitado na categ B, no mínimo, 03 anos",
-                "21 anos e esteja habilitado na categ A, no mínimo, 02 anos",
-                "21 anos e esteja habilitado na categ B, no mínimo, 02 anos",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Um candidato à obtenção da CNH poderá requerer
-                simultaneamente, submetendo-se a um único exame de aptidão
-                física e mental e de avaliação psicológica, a habilitação nas
-                categorias:`,
-            alternativas: ["A e C", " A e D", "A e B", "A e E"],
-            correta: "",
-        },
-        {
-            pergunta: `A expedição de novo Certificado de Registro do Veículo é
-                obrigatória toda vez que:
-                <br>I- O proprietário mudar de residência, no mesmo Município
-                <br>II- O proprietário mudar a categoria de sua CNH
-                <br>III- for alterada qualquer característica do veículo
-                <br>Está correto o que se afirmar APENAS em:`,
-            alternativas: ["I, II e III", "I e III", "II", "III"],
-            correta: "",
-        },
-        {
-            pergunta: `Segundo o Código de Trânsito Brasileiro, vias locais são
-                aquelas:`,
-            alternativas: [
-                "Que a sinalização de trânsito indica como tais",
-                "Que se destinam apenas ao acesso as áreas restritas",
-                `Bloqueadas ao trânsito local, sem cruzamentos, com entradas e
-                saídas especiais e que permitem trânsito livre`,
-                `Que geram e coletam trânsito para as vias preferenciais ou de
-                trânsito rápido`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Um condutor de veículo oficial, transportando autoridades
-                deve saber que esse tipo de veículo:`,
-            alternativas: [
-                "goza de prioridade no trânsito",
-                `pode ultrapassar o limite de velocidade regulamentado em
-                situações de urgência, desde que acione as luzes de emergência
-                (pisca-alerta)`,
-                "deve circular obedecendo as regras de transito.",
-                "pode usar a buzina, para ter a passagem",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O Código de Trânsito Brasileiro prevê, em seu capitulo
-                VI, a educação para o trânsito, e o Sistema Nacional de Trânsito
-                estabelece que a educação para o trânsito, oferecida em todos os
-                níveis de ensino, deve:`,
-            alternativas: [
-                `Ter como foco o ser humano e trabalhar para a mudança de
-                comportamentos e atitudes em relação ao trânsito`,
-                `Utilizar metodologia de trabalho tradicional para atingir os
-                estudantes das diferentes faixas etárias`,
-                "Esse método já é aplicado em todos os níveis em nosso país",
-                `Ter como foco o condutor e trabalhar para a mudança de
-                comportamentos no trânsito`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O candidato encontrado dirigindo sem a companhia do
-                instrutor terá a Licença de Aprendizagem de Direção Veicular
-                (LADV):`,
-            alternativas: [
-                "Suspensa por 6 meses.",
-                "Apreendida por 2 meses.",
-                "Apreendida por tempo indeterminado.",
-                "Cassada por 12 meses.",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O proprietário de veículo deve saber que não será
-                expedido novo CRV (Certificado de Registro de Veículo).`,
-            alternativas: [
-                "Enquanto não fizer a transferência no órgão competente",
-                `Enquanto houver débitos de multas de trânsito veiculadas ao
-                veículo`,
-                `Enquanto houver débitos em seu nome de multas de trânsito
-                relativas a infrações cometidas na condução de outro veículo`,
-                "Enquanto não comprovar a residência e cidade que mora",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Com relação a via e a pista, considere:
-                <br>I- Via é a superfície por onde transitam veículos pessoas e
-                animais, compreendendo a pista, a calçada, o acostamento, a ilha
-                e o canteiro central
-                <br>II- Pista e via tem o mesmo significado
-                <br>III- Pista e faixa de domínio tem o mesmo significado
-                <br>É correto o que se afirmar em:`,
-            alternativas: [
-                " II, apenas",
-                "II e III, apenas",
-                "I",
-                "I, II e III",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O veículo 'A' circula a 90 km/h e o veículo 'B' circula a
-                70 km/h. Considerando que ambos circulam em via arterial, quem
-                está desrespeitando a velocidade máxima permitida?`,
-            alternativas: [
-                "o veículo B",
-                "nenhum dos dois",
-                "o veículo A",
-                "os dois",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Quando solicitado pelo proprietário do veículo, o órgão
-                que devera expedir vias originais do CRLV e:`,
-            alternativas: [
-                "a Polícia Rodovia Federal",
-                "a Policia Militar",
-                "o Detran",
-                "o Contran",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `São exames obrigatórios que todo pretendente à permissão
-                para dirigir precisa fazer:`,
-            alternativas: [
-                `Sanidade física e mental, psicológico, legislação e teóricas
-                defensivas no trânsito`,
-                `Psicológico, sanidade física e mental, simulador, teórica e
-                pratica`,
-                `Sanidade física e mental, psicológico, teórico e pratica de
-                direção veicular`,
-                "São exames para avaliação do candidato a condutor de veículos",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Correlacione o tipo de via com velocidade máxima
-                permitida para automóveis, quando não existir sinalização de
-                regulamentação de velocidade
-                <br>Tipo de via
-                <br>I- Via de trânsito rápido
-                <br>II-Rodovia
-                <br>III-Estrada
-                <br>Velocidade máxima
-                <br>1- 110 Km/h
-                <br>2- 60 km/h
-                <br>3- 80 km/h
-                <br>A correlação correta é:`,
-            alternativas: [
-                "I-2, II-1, III-3",
-                " I-2, II-3, III-1",
-                "I-3, II-1, III-2",
-                "I-3, II-2, III-1",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Estabelecer diretrizes da Política Nacional de Trânsito
-                com vistas a segurança, a fluidez, ao conforto na circulação,
-                a defesa ambiental e a educação para o trânsito e fiscalizar
-                seu cumprimento é:`,
-            alternativas: [
-                `De competência exclusiva dos Departamentos Estaduais de
-                Trânsito – Detran`,
-                "Um dos objetivos básicos do Sistema Nacional de Trânsito",
-                "É uma meta do Contran",
-                "É a coordenação do traçado do Código de Trânsito Brasileiro",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Superfície por onde transitam veículos, pessoas e
-                animais, compreendendo a pista, a calçada, o acostamento, ilha
-                e canteiro central:`,
-            alternativas: ["Rua", "Rodovia", "perímetro urbano", "Via"],
-            correta: "",
-        },
-        {
-            pergunta:
-                "Sobre as categorias de habilitação podem-se afirmar que:",
-            alternativas: [
-                "Categoria D – veículos articulados e caminhões",
-                "Categoria E – veículos articulados e acoplados",
-                "Categoria C – ônibus",
-                "Categoria D – Ônibus acoplados",
-            ],
-            correta: "",
-        },
-        {
-            pergunta:
-                "No trecho rodovia dentro de áreas urbanas, o condutor deve:",
-            alternativas: [
-                `manter a mesma velocidade, mas não fazer ultrapassagens nesse
-                trecho`,
-                `não se importar com as situações locais, pois a rodovia é
-                preferencial`,
-                "manter a mesma velocidade com que vinha dirigindo",
-                "utilizar velocidade compatível com as condições locais",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Todo veículo deve ser obrigatoriamente identificado por
-                caracteres gravados no chassi ou no monobloco, reproduzidos em
-                outras partes, conforme disposto pelo CONTRAN. Sobre a
-                regravação destes caracteres, é correto afirmar que`,
-            alternativas: [
-                "O órgão responsável pela gravação é o DETRAN",
-                "É processada apenas por empresas credenciadas pelo DETRAN",
-                `Depende de vistoria realizada pelo DETRAN, quando do
-                licenciamento anual`,
-                "É processada apenas por empresas credenciadas pelo CONTRAN",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O candidato a primeira habilitação, depois de submetido
-                a todos os exames e considerado apto, receberá:`,
-            alternativas: [
-                `permissão para dirigir, válida por 1 (um) ano, em todo o
-                território nacional`,
-                "carteira nacional de habilitação, válida por 1(um) ano",
-                `permissão para dirigir, válida por 2 (dois) anos, em todo o
-                território nacional`,
-                "carteira nacional de habilitação, válida por 5 (cinco) anos",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `O proprietário de um veículo, após a aquisição, permanece
-                por um período de oito anos sem proceder qualquer alteração,
-                tanto nas características do veículo como no endereço.
-                Em situações como esta, deve-se efetuar:`,
-            alternativas: [
-                "O registro e o licenciamento no ato da compra apenas.",
-                "O registro no ato da compra e o licenciamento anualmente.",
-                "O Certificado de Propriedade no ato da compra;",
-                "O Registro do veículo junto ao DENATRAN;",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Três motoristas cometem infrações, conforme descrito
-                abaixo: MOTORISTA  TIPO DE VIA  VELOCIDADE REGULAMENTADA (KM/H)
-                VELOCIDADE DE VEÍCULO (KM/H)
-                <br>1 -- Trans. Rápido -- 80 -- 125
-                <br>2 -- Arterial -- 60 -- 91
-                <br>3 -- Local -- 30 -- 44
-                <br>Nessa situação, a suspensão do direito de dirigir será
-                aplicada APENAS:`,
-            alternativas: [
-                "Ao motorista 1",
-                "aos motoristas 1 e 2",
-                "ao motorista 3",
-                "aos motoristas 1 e 3",
-            ],
-            correta: "",
-        },
-        {
-            pergunta: "Assinale a alternativa incorreta:",
-            alternativas: [
-                `O condutor de categoria 'A' pode conduzir veículo de 2 ou 3
-                rodas.`,
-                `O condutor habilitado em qualquer categoria poderá conduzir
-                motos de até 100cc.`,
-                `Os condutores de categorias 'B' e 'C' só poderão conduzir
-                veículos com no máximo 08 lugares fora o do condutor.`,
-                `Com categoria 'E', poderão ser conduzidos veículos das
-                categorias inferiores, como: 'B', 'C' e 'D'`,
-                `Condutor habilitado na categoria 'D' poderá conduzir veículos
-                com mais de 8 passageiros.`,
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `A velocidade de um caminhão mínima em uma rodovia pista
-            dupla!`,
-            alternativas: ["110 km/h", "100 km/h", "55 km/h", "45 km/h"],
-            correta: "45 km/h",
-        },
-        {
-            pergunta: "Os veículos quanto à categoria são:",
-            alternativas: [
-                `Oficial, de representação  diplomática, particular, de aluguel,
-                de aprendizagem`,
-                "Particular, de aluguel, de aprendizagem, ambulância, oficiais",
-                "Automóvel, de aluguel, de transportes e aprendizagem",
-                `Oficial, de representação diplomática, particular, de remoções
-                urgentes, de apresendizagem`,
-            ],
-            correta:
-                `Oficial, de representação diplomática, particular, de aluguel,
-                de aprendizagem`,
-        },
-        {
-            pergunta: `Qual é o documento obrigatório de apresentar, quando
-                solicitado pela autoridade de transito.`,
-            alternativas: [
-                "CNH",
-                "Certificado de Registro de Veículo",
-                "Certificado de Registro e Licenciamento de Veículo",
-                "Autorização de Transferência de Propriedade de Veículo",
-            ],
-            correta: "Certificado de Registro e Licenciamento de Veículo",
-        },
-        {
-            pergunta: "Qual a validade da CNH, após um ano de permissionária.",
-            alternativas: [
-                "de 05 em 05 anos até 65 anos",
-                "de 10 em 10 anos até 50 anos",
-                "de 05 em 05 anos até 50 anos",
-            ],
-            correta: "de 10 em 10 anos até 50 anos",
-        },
-        {
-            pergunta: `Um condutor que dirigir uma veículo automotor da espécie
-                motor-casa é necessário possuir a CNH na categoria:`,
-            alternativas: ["D", "B", "C", "E"],
-            correta: "B",
-        },
-        {
-            pergunta: `Transitar em marcha à ré, salvo na distância necessária
-                a pequenas manobras e de forma a não causar riscos à segurança,
-                é uma:`,
-            alternativas: [
-                " Infração, com multa média.",
-                "infração, com multa.",
-                "infração, com multa e retenção do veículo.",
-                "Infração, com multa e retenção do veículo.",
-            ],
-            correta: "infração, com multa.",
-        },
-        {
-            pergunta: `As características dos veículos, suas especificações
-                básicas, configuração e condições essenciais para registro,
-                licenciamento e circulação são estabelecidas.`,
-            alternativas: [
-                "pelo Departamento Nacional de Transito - DENATRAN.",
-                "pelos órgãos de Nacional de Transito.",
-                "pelos Departamentos Estaduais de Transito - Detran.",
-                "pelo Conselho Nacional de Trânsito - Contran.",
-            ],
-            correta: "pelo Conselho Nacional de Trânsito - Contran.",
-        },
-        {
-            pergunta: "Um motociclista, ao transitar com os faróis apagados.",
-            alternativas: [
-                "comete infração, apenas se estiver transitando à noite.",
-                "comete infração de trânsito.",
-                "comete uma penalidade verbal",
-                "comete infração, somente nas rodovias",
-            ],
-            correta: "comete infração de trânsito.",
-        },
-        {
-            pergunta: "Qual a velocidade da via urbana Trânsito Rápido.",
-            alternativas: ["90 km/h", "70 km/h", "80 km/h", "60 km/h"],
-            correta: "80 km/h",
-        },
-        {
-            pergunta: "Qual o nome da via com velocidade de 40 km/h.",
-            alternativas: [
-                "Transito Rapido",
-                "Arterial",
-                "Coletora",
-                "Vicinais",
-            ],
-            correta: "Coletora",
-        },
-        {
-            pergunta: "Qual a velocidade da via urbana chamada de Local.",
-            alternativas: ["40 km/h", "30 km/h", "50 km/h", "20 km/h"],
-            correta: "30 km/h",
-        },
-        {
-            pergunta: "Qual o nome da via urbana com a velocidade de 60 km/h.",
-            alternativas: ["Transito rapido", "Coletora", "Arterial", "Local"],
-            correta: "Arterial",
-        },
-        {
-            pergunta: `Qual a velocidade minima de uma motocicleta numa rodovia
-                de pista dupla com canteiro central.`,
-            alternativas: ["110 km/h", "100 km/h", "60 km/h", "55 km/h"],
-            correta: "55 km/h",
-        },
-        {
-            pergunta: `Qual a velocidade mínima de um onibus numa rodovia pista
-                dupla.`,
-            alternativas: ["60 km/h", "45 km/h", "55 km/h", "90 km/h"],
-            correta: "45 km/h",
-        },
-        {
-            pergunta: `Quais são os órgãos Normativos do Sistema Nacional de
-                Transito.`,
-            alternativas: [
-                "Contran, Denatran e Detran",
-                "Denatran, Detran e Dnit",
-                "Contral, Cetran e Contradife",
-                "Denatran, Cetran e Contradife",
-            ],
-            correta: "Contral, Cetran e Contradife",
-        },
-        {
-            pergunta: `Quais são os órgãos Executivos de Transito do Sistema
-                Nacional de Transito.`,
-            alternativas: [
-                "Denatran, Detran e Ciretrans",
-                "Denatran, Detran",
-                "Denatran",
-                "Detran",
-            ],
-            correta: "Denatran, Detran",
-        },
-        {
-            pergunta: `Quais são os órgãos Executivo Rodoviários do Sistema
-                Nacional de Transito.`,
-            alternativas: ["Denit e DER", "Detran e DER", "DNIT", "DER"],
-            correta: " Denit e DER",
-        },
-        {
-            pergunta: "Como são classificadas as vias terrestres.",
-            alternativas: [
-                "Vicinais e secundárias",
-                "Urbanas e Rurais",
-                "Somente as Rurais",
-                "Vicinias e Rurais",
-            ],
-            correta: "Urbanas e Rurais",
-        },
-        {
-            pergunta: `Em uma rodovia não sinalizada, o condutor poderá atingir
-                a velocidade máxima de:`,
-            alternativas: [
-                "60 km/h para caminhões.",
-                "110 Km/h para utilitários",
-                "80 km/h para ônibus e microônibus.",
-                "90 km/h para automóveis",
-            ],
-            correta: "110 Km/h para utilitários",
-        },
-        {
-            pergunta: `Para se alterar uma categoria da CNH, deve-se obedecer a
-                seguinte ordem.`,
-            alternativas: [
-                `Categoria D, ser habilitado no mínimo há 02 (dois) anos na
-                categoria C.`,
-                `Categoria C, ser habilitado no mínimo há 02 (dois) ano na
-                categoria B.`,
-                `Categoria C, ser habilitado no mínimo há 01 (um) ano na
-                categoria B.`,
-                `Categoria D, ser habilitado no mínimo há 03 (três) anos na
-                categoria B.,`
-            ],
-            correta: `Categoria C, ser habilitado no mínimo há 01 (um) ano na
-                categoria B.`,
-        },
-        {
-            pergunta: `A velocidade mínima permitida em uma via arterial sem
-                sinalização é :`,
-            alternativas: ["30 km/h.", "50 km/h.", "60 km/h.", "40 km/h."],
-            correta: "30 km/h.",
-        },
-        {
-            pergunta: `Um candidato à obtenção da Carteira Nacional de
-                Habilitação, durante o exame de direção veicular para a
-                categoria A, derruba um cone de balizamento. Nessas condições
-                ele será.`,
-            alternativas: [
-                "aprovado, pois atingiu 03 pontos negativos.",
-                "aprovado, desde que não cometa outra falta leve.",
-                " reprovado, desde que não cometa outra falta.",
-                "reprovado, devendo realizar novo exame.",
-            ],
-            correta: "reprovado, devendo realizar novo exame.",
-        },
-        {
-            pergunta: `Para que um condutor possa dirigir veiculo destinado ao
-                transporte de escolares é preciso, além de outras exigências,
-                que tenha idade superior a:`,
-            alternativas: [
-                "18 anos e seja habilitado na categoria D",
-                "18 anos e seja habilitado na categoria C",
-                "21 anos e seja habilitado na categoria D",
-                "21 anos e seja habilitado na categoria E",
-            ],
-            correta: "21 anos e seja habilitado na categoria D",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria D pode dirigir:",
-            alternativas: [
-                "trailer e bitrem.",
-                "caminhão articulado.",
-                "ônibus",
-                "ônibus e automóvel",
-            ],
-            correta: "ônibus e automóvel",
-        },
-        {
-            pergunta: `Um condutor de 72 anos, habilitado na categoria B desde
-                os 18 anos, deve renovar o exame de aptidão física e mental a
-                cada `,
-            alternativas: ["5 anos.", "2 anos.", "3 anos.", "10 anos."],
-            correta: "3 anos.",
-        },
-        {
-            pergunta: "A fotocópia da Carteira Nacional de Habilitação:",
-            alternativas: [
-                `É inválida para substituir o documento original e comprovar o
-                direito de seu portador de dirigir.`,
-                "Autenticado pelo Cartório, é permitida",
-                `O Código de Transito, reconhece autenticação de documentos de
-                transito.`,
-                `É válida quando apresentada junto com o documento de identidade
-                do portador.`,
-            ],
-            correta:
-                `É inválida para substituir o documento original e comprovar o
-                direito de seu portador de dirigir.`,
-        },
-        {
-            pergunta: `Com relação a CNH e a Permissão para Dirigir, considere:
-                <br>I - A CNH é de porte obrigatório quando o condutor estiver
-                a direção do veículo.
-                <br>II – A Permissão para Dirigir é de porte obrigatório quando
-                o condutor estiver a direção do veiculo
-                <br>III – A CNH pode ser apresentada em cópia reprográfica
-                autenticada pelo DETRAN. É correto o que se afirmar em:`,
-            alternativas: ["I, II e III", "I e III", "I, somente", "I e II"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `No que tange o licenciamento de veículo, considere:
-                <br>I – Todo veículo automotor deve ser licenciado anualmente
-                pelo órgão executivo de transito do Estado ou do Distrito
-                Federal.
-                <br>II – O primeiro licenciamento será feito simultaneamente ao
-                registro do veículo
-                III – O veículo só será licenciado se estiverem quitados os
-                débitos relativos a tributos, encargos e multas de transito e
-                ambientais, vinculadas ao veiculo.
-                <br>É correto o que se AFIRMA EM:`,
-            alternativas: ["I e III", "II e III", "I, II e III", "III"],
-            correta: "I, II e III",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria “C” pode dirigir:",
-            alternativas: [
-                "caminhão e ônibus",
-                "caminhão",
-                "automóveis e caminhão",
-                "caminhão e todos veículos de duas rodas",
-            ],
-            correta: "automóveis e caminhão",
-        },
-        {
-            pergunta: `A via urbana na qual os veículos tem prioridade de
-                trânsito é a:`,
-            alternativas: [
-                "Arterial",
-                "Vicinal",
-                "Transito rápido",
-                "Coletora",
-            ],
-            correta: "Transito rápido",
-        },
-        {
-            pergunta: `Com relação a CNH e a Permissão para Dirigir, considere:
-                <br>I - A CNH é de porte obrigatório quando o condutor estiver
-                a direção do veículo.
-                <br>II – A Permissão para Dirigir é de porte obrigatório quando
-                o condutor estiver a direção do veiculo
-                <br>III – A CNH pode ser apresentada em cópia reprográfica
-                autenticada pelo DETRAN. É correto o que se afirmar em:`,
-            alternativas: ["I, II e III", "I e III", "I, somente", "I e II"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `No que diz respeito à Permissão para Dirigir, considere:
-                <br>I. Ao candidato aprovado nos exames de habilitação será
-                conferida a Permissão para Dirigir.
-                <br>II. A Permissão para Dirigir tem validade de um ano.
-                <br>III. A Permissão para Dirigir será cassada assim que o
-                condutor cometer a primeira infração de trânsito.
-                <br>É correto o que se afirmar em:`,
-            alternativas: ["I e III", "I, II e III", "I e II", "II e III"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `Para expedição de um novo Certificado de Registro de
-                Veículo, que teve substituição de qualquer equipamento de
-                segurança especificado pelo fabricante, exige-se:`,
-            alternativas: [
-                "a nota fiscal dos equipamentos notificados.",
-                `um certificado de segurança expedido por órgão ou entidade de
-                metrologia legal.`,
-                `um certificado de licenciamento expedido por órgão ou entidade
-                de metrologia legal.`,
-                "a nota fiscal do serviço executado.",
-            ],
-            correta: `um certificado de segurança expedido por órgão ou entidade
-                de metrologia legal.`,
-        },
-        {
-            pergunta: `No que tange o licenciamento de veículo, considere:
-                <br>I – Todo veículo automotor deve ser licenciado anualmente
-                pelo órgão executivo de transito do Estado ou do Distrito
-                Federal.
-                <br>II – O primeiro licenciamento será feito simultaneamente ao
-                registro do veículo
-                <br>III – O veículo só será licenciado se estiverem quitados os
-                débitos relativos a tributos, encargos e multas de transito e
-                ambientais, vinculadas ao veiculo.
-                <br>É correto o que se AFIRMA EM:`,
-            alternativas: ["I e III", "II e III", "I, II e III", "III"],
-            correta: "I, II e III",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria “C” pode dirigir:",
-            alternativas: [
-                "caminhão e ônibus",
-                "caminhão",
-                "automóveis e caminhão",
-                "caminhão e todos veículos de duas rodas",
-            ],
-            correta: "automóveis e caminhão",
-        },
-        {
-            pergunta: "A velocidade compatível com a segurança é:",
-            alternativas: [
-                `de acordo com a situação e sinalização da via, o local e a
-                visibilidade.`,
-                "80 km/h, nas vias coletora.",
-                "e a velocidade praticado com segurança.",
-                "é quando você tem o domínio do veiculo.",
-            ],
-            correta: `de acordo com a situação e sinalização da via, o local e
-                a visibilidade.`,
-        },
-        {
-            pergunta: `Nas rodovias sem sinalização regulamentadora, a
-                velocidade mínima para os ônibus é de:`,
-            alternativas: ["45 km/h", "60 km/h", "90 km/h", "100 km/h"],
-            correta: "45 km/h",
-        },
-        {
-            pergunta: ` Com relação ao Exame de Direção Veicular, considere:
-                <br>I – Desobedecer à sinalização semafórica constitui falta eliminatória no Exame de Direção Veicular
-                <br>II – O Candidato que cometer uma falta grave será automaticamente reprovado no Exame de Direção veiculo.
-                <br>III – O candidato a obtenção da CNH na categoria A que iniciar a prova sem estar com o capacete devidamente ajustado à cabeça será automaticamente reprovado no Exame de Direção Veicular.
-                <br>É correto o que se afirma em:`,
-            alternativas: ["I, II e III", "I e II", "I e III", "II e III"],
-            correta: "I e III",
-        },
-        {
-            pergunta: `A via urbana na qual os veículos tem prioridade de
-                trânsito é a:`,
-            alternativas: ["Arterial", "Vicinal", "Transito rápido", "Coletora"],
-            correta: "Transito rápido",
-        },
-        {
-            pergunta: `Nos casos em que houver retenção do veículo e não for
-                possível sanar a falha no local da infração, o veículo poderá
-                ser retirado por condutor regularmente habilitado, mediante
-                recolhimento do Certificado de:`,
-            alternativas: [
-                "Registro do Veículo",
-                "Registro do Veículo e da Carteira Nacional de Habilitação",
-                "Certificado de Compra e Venda do Veículo",
-                "Licenciamento Anual do Veículo"
-            ],
-            correta: "Licenciamento Anual do Veículo",
-        },
-        {
-            pergunta: `Para que um condutor possa dirigir veiculo destinado ao
-                transporte de escolares é preciso, além de outras exigências,
-                que tenha idade superior a:`,
-            alternativas: [
-                "18 anos e seja habilitado na categoria D",
-                "18 anos e seja habilitado na categoria C",
-                "21 anos e seja habilitado na categoria D",
-                "21 anos e seja habilitado na categoria E"
-            ],
-            correta: "21 anos e seja habilitado na categoria D",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria C pode dirigir:",
-            alternativas: [
-                "automóveis e ônibus.",
-                "caminhões.",
-                "automóveis e caminhões.",
-                "caminhões e ônibus."
-            ],
-            correta: "automóveis e caminhões.",
-        },
-        {
-            pergunta: `O Código de Trânsito Brasileiro prevê, em seu capítulo
-                VI, a educação para o trânsito, e o Sistema Nacional de Trânsito
-                estabelece que a educação para o trânsito, oferecida em todos os
-                níveis de ensino, deve:`,
-            alternativas: [
-                `estabelecer a prioridade para que os condutores, tenham melhor
-                conhecimento de dirigir.`,
-                `utilizar metodologia de trabalho tradicional para atingir os
-                estudantes das diferentes faixas etárias.`,
-                `ter como foco o ser humano e trabalhar para a mudança de
-                comportamentos e atitudes em relação ao trânsito.`,
-                `ter como foco o ser condutor e trabalhar para que se comportem
-                de acordo com a legislação.`
-                ],
-            correta: `ter como foco o ser humano e trabalhar para a mudança de
-                comportamentos e atitudes em relação ao trânsito.`,
-        },
-        {
-            pergunta: `O CRLV – Certificado de Registro e Licenciamento de
-                Veiculo, renovado anualmente, por ocasião do licenciamento:`,
-            alternativas: [
-                `não é de porte obrigatório, devendo aguardar juntos com
-                documentos residenciais.`,
-                `é de porte obrigatório, podendo ser apresentado em cópia
-                reprográfica autenticada pelo DETRAN.`,
-                `é de porte obrigatório, devendo ser apresentado apenas no
-                original.`,
-                "é um documento de identificação de propriedade do veículo."
-            ],
-            correta: `é de porte obrigatório, devendo ser apresentado apenas no
-                original.`,
-        },
-        {
-            pergunta: ` Para que um condutor possa dirigir veículo destinado ao
-                transporte de escolares é preciso, além de outras exigências,
-                que tenha idade superior a:`,
-            alternativas: [
-                "21 anos e seja habilitado na categoria “C”.",
-                "21 anos apenas..",
-                "21 anos e seja habilitado na categoria “B”",
-                "21 anos e seja habilitado na categoria “D”."
-            ],
-            correta: "21 anos e seja habilitado na categoria “D”.",
-        },
-        {
-            pergunta: `Para que um cidadão obtenha habilitação na categoria “C”
-                é preciso estar habilitado na categoria:`,
-            alternativas: [
-                `“B” há, no mínimo, um ano e não ter cometido, nos últimos doze
-                meses, nenhuma infração gravíssima.`,
-                `“B” há no mínimo, dois anos e não ter cometido, nos últimos
-                doze meses nenhuma infração gravíssima.`,
-                `tendo a categoria “B”, é só fazer as aulas práticas de caminhão
-                para tê-la.`,
-                `“B”, conforme o Código de Trânsito Brasileiro, não há
-                restrições para “C”.`
-            ],
-            correta: `tendo a categoria “B”, é só fazer as aulas práticas de
-            caminhão para tê-la.`,
-        },
-        {
-            pergunta: `Com relação à CNH e à Permissão de Dirigir, considere:
-                <br>I – A CNH é de porte obrigatório quando o condutor estiver à
-                direção do veículo.
-                <br>II – A Permissão para Dirigir é de porte obrigatório quando
-                o condutor estiver à direção do veículo.
-                <br>III – A CNH pode ser apresentada em copia reprográfica
-                autenticada pelo DETRAN.
-                <br>É correto o que se afirma em:`,
-            alternativas: [", II e III", "II e III", "I e II", "I e III"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `Com relação ao Exame de Direção Veicular, considere:
-                <br>I. Desobedecer à sinalização semafórica constitui falta
-                eliminatória no Exame de Direção Veicular.
-                <br>II. O candidato que cometer uma falta grave será
-                automaticamente reprovado no Exame de Direção Veicular.
-                <br>III. O candidato à obtenção da CNH na categoria A que
-                iniciar a prova sem estar com o capacete devidamente ajustado
-                à cabeça será automaticamente reprovado no Exame de Direção
-                Veicular.
-                <br>É correto o que se afirma em`,
-            alternativas: ["I, II e III", "II e III", " I e II", "I e III"],
-            correta: "I e III",
-        },
-        {
-            pergunta: `Nossa vida em sociedade é organizada por normas e regras
-                de conduta que definem nossos direitos e deveres. O conjunto de
-                leis que regulamenta o nosso trânsito é`,
-            alternativas: [
-                "o Sistema Nacional de Trânsito (SNT).",
-                "o Código de Trânsito Brasileiro (CTB).",
-                "o CONTRAN",
-                "o DETRAN"
-            ],
-            correta: "o Código de Trânsito Brasileiro (CTB).",
-        },
-        {
-            pergunta: ` A Carteira Nacional de Habilitação e a Permissão para
-                Dirigir somente terão validade para a condução do veículo quando
-                apresentadas`,
-            alternativas: [
-                "junto com o Certificado de Registro e Licenciamento do Veículo",
-                "em original",
-                "junto com o Certificado de Registro de Veiculo.",
-                "em original com um documento com foto."
-            ],
-            correta: "em original",
-        },
-        {
-            pergunta: `Para que um condutor possa dirigir veículo destinado ao
-                transporte de escolares é preciso, além de outras exigências,
-                que tenha idade superior a`,
-            alternativas: [
-                "21 anos e seja habilitado na categoria E.",
-                "21 anos e seja habilitado pelo dois anos na categoria C.",
-                "21 anos e seja habilitado na categoria D.",
-                "21 anos e seja habilitado na categoria B."
-            ],
-            correta: "21 anos e seja habilitado na categoria D.",
-        },
-        {
-            pergunta: `A via pública urbana aberta à circulação de acordo com
-                sua utilização classifica-se em:`,
-            alternativas: [
-                "Trânsito rápido, arterial, coletora e local.",
-                "Transito rapido, arterial, vicinais e local.",
-                `Rodovia de pista dupla com canteiro central, transito rapido
-                e arterial.`,
-                "Rodovia, coletora, local e estrada."
-            ],
-            correta: "Trânsito rápido, arterial, coletora e local.",
-        },
-        {
-            pergunta: "Qual a velocidade minima:",
-            alternativas: [
-                "superior a 50% da local",
-                `não poderá ser inferior à metade da maxima permitida no local,
-                exceto na faixa da direita`,
-                "depende da área que estiver.",
-                "superior a 50% da área urbana"
-            ],
-            correta: `não poderá ser inferior à metade da maxima permitida no
-                local, exceto na faixa da direita`,
-        },
-        {
-            pergunta: "Sessenta quilometros por hora é a velocidade:",
-            alternativas: [
-                `máxima permitida em vias arteriais, quando não houver
-                sinalização.`,
-                "máxima permitida em vias de trânsito rápido.",
-                "máxima permitida em vias coletoras.",
-                "máxima permitida em vias vicinais."
-            ],
-            correta: `máxima permitida em vias arteriais, quando não houver
-                sinalização.`,
-        },
-        {
-            pergunta: `A velocidade mínima em uma rodovia sinalizada com a
-                velocidade máxima de 100 km/h é:`,
-            alternativas: ["50 km/h.", "70 km/h.", "60 km/h.", "55 km/h"],
-            correta: "50 km/h.",
-        },
-        {
-            pergunta: `Vias rurais não pavimentadas, com velocidade máxima de
-                60 km/h, quando não sinalizada:`,
-            alternativas: [
-                "rodovias.",
-                "vicinais.",
-                "rodovias pista dupla com canteiro central.",
-                "estradas."
-            ],
-            correta: "estradas",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria “C” pode dirigir:",
-            alternativas: [
-                "automóvel e ônibus",
-                "automóvel e motocicletas",
-                "automóvel e caminhão",
-                "automóvel e utilitários"
-            ],
-            correta: "automóvel e caminhão",
-        },
-        {
-            pergunta: `A identificação externa do veículo é feita por meio de
-                placas dianteira e traseira, sendo que a placa traseira é
-                lacrada na estrutura de todos os veículos. A placa dianteira
-                tem seu uso dispensado para:`,
-            alternativas: [
-                "Monociclos", "motocicletas", "caminhão trator", "ciclomotor"
-            ],
-            correta: "motocicletas",
-        },
-        {
-            pergunta: `As cores das placas identificam a categoria do veículo.
-                Uma VAM que é utilizada para realizar Transporte Escolar deverá
-                ter a placa na cor:`,
-            alternativas: ["vermelha", "branca", "azul", "preta"],
-            correta: "vermelha",
-        },
-        {
-            pergunta: `Superficie por onde transitam veículos, pessoas e
-                animais, compreendendo a pista, a calçada, o acostamento, ilha
-                e canteiro central:`,
-            alternativas: ["rua", "avenida", "via", "rodovias"],
-            correta: "via",
-        },
-        {
-            pergunta: `Com relação à CNH e à Permissão de Dirigir, considere:
-                <br>I – A CNH é de porte obrigatório quando o condutor estiver à
-                direção do veículo.
-                <br>II – A Permissão para Dirigir é de porte obrigatório quando
-                o condutor estiver à direção do veículo.
-                <br>III – A CNH pode ser apresentada em copia reprográfica
-                autenticada pelo DETRAN.
-                <br>É correto o que se afirma em:`,
-            alternativas: [", II e III", "II e III", "I e II", "I e III"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `No que diz respeito à Permissão para Dirigir, considere:
-                <br>I. Ao candidato aprovado nos exames de habilitação será
-                conferida a Permissão para Dirigir.
-                <br>II. A Permissão para Dirigir tem validade de um ano.
-                <br>III. A Permissão para Dirigir será cassada assim que o
-                condutor cometer a primeira infração de trânsito.
-                <br>É correto o que se afirmar em:`,
-            alternativas: ["I e III", "I, II e III", "I e II", "II e III"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `Para expedição de um novo Certificado de Registro de
-                Veículo, que teve substituição de qualquer equipamento de
-                segurança especificado pelo fabricante, exige-se:`,
-            alternativas: [
-                "a nota fiscal dos equipamentos notificados.",
-                `um certificado de segurança expedido por órgão ou entidade de
-                metrologia legal.`,
-                `um certificado de licenciamento expedido por órgão ou entidade
-                de metrologia legal.`,
-                "a nota fiscal do serviço executado.",
-            ],
-            correta: `um certificado de segurança expedido por órgão ou entidade
-                de metrologia legal.`,
-        },
-        {
-            pergunta: `No que tange o licenciamento de veículo, considere:
-                <br>I – Todo veículo automotor deve ser licenciado anualmente
-                pelo órgão executivo de transito do Estado ou do Distrito
-                Federal.
-                <br>II – O primeiro licenciamento será feito simultaneamente ao
-                registro do veículo
-                <br>III – O veículo só será licenciado se estiverem quitados os
-                débitos relativos a tributos, encargos e multas de transito e
-                ambientais, vinculadas ao veiculo.
-                <br>É correto o que se AFIRMA EM:`,
-            alternativas: ["I e III", "II e III", "I, II e III", "III"],
-            correta: "I, II e III",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria “C” pode dirigir:",
-            alternativas: [
-                "caminhão e ônibus",
-                "caminhão",
-                "automóveis e caminhão",
-                "caminhão e todos veículos de duas rodas"
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Segundo a classificação do Código de Trânsito Brasileiro,
-            uma via destinada apenas ao acesso às áreas restritas é chamada:`,
-            alternativas: ["secundária", "vicinais", "local", "Sem saída"],
-            correta: "Sem saída",
-        },
-        {
-            pergunta: "A renovação de exame deverá ocorrer:",
-            alternativas: [
-                "acima de 60 anos a cada 3 anos",
-                "após 65 anos a cada 3 anos",
-                "de 5 em 5 anos até 60 anos",
-                "após 50 anos a cada 5 anos até 70 anos"
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Em via urbana cuja a velocidade máxima é 60 km/h é
-                classificada de:`,
-            alternativas: ["trânsito rápido", "coletora", "arterial", "local"],
-            correta: "",
-        },
-        {
-            pergunta: `O CRV – Certificado de Registro de Veículos, expedido
-                pelos órgãos executivos de trânsito dos Estados e do Distrito
-                Federal:`,
-            alternativas: [
-                "não é de porte obrigatório",
-                `é de porte obrigatório, devendo ser apresentado somente ao
-                original`,
-                "é de porte obrigatório na abordagem policial",
-                "é um documento de propriedade"
-            ],
-            correta: "",
-        },
-        {
-            pergunta: `Organizar e manter o Registro Nacional de Veículos
-            Automotores – RENAVAM é de competência:`,
-            alternativas: [
-                "dos Conselhos Estaduais de Trânsito – CETRAN",
-                "do DETRAN",
-                "do órgão máximo executivo de trânsito da União.",
-                "do órgão máximo normativo do trânsito – CONTRAN"
-            ],
-            correta: "do órgão máximo executivo de trânsito da União.",
-        },
-        {
-            pergunta: `Um condutor, ao dirigir numa via arterial, sem
-                sinalização de regulamentação de velocidade, poderá trafegar,
-                no máximo, a:`,
-            alternativas: ["50 km/h.", "80 km/h.", "60 km/h.", "40 km/h."],
-            correta: "60 km/h.",
-        },
-        {
-            pergunta: `O condutor se torna inabilitado para conduzir qualquer
-                espécie de veículo automotor quando:`,
-            alternativas: [
-                "o exame psicotécnico estiver com prazo de validade vencido.",
-                "sua Carteira Nacional de Habilitação for cassada.",
-                "quando o condutor cometer crime de trânsito.",
-                "o exame de saúde e visão estiver com prazo de validade vencido."
-            ],
-            correta: "sua Carteira Nacional de Habilitação for cassada.",
-        },
-        {
-            pergunta: `A identificação externa do veículo é feita por meio de
-                placas dianteira e traseira, sendo que a placa traseira é
-                lacrada na estrutura de todos os veículos. A placa dianteira
-                tem seu uso dispensado para:`,
-            alternativas: [
-                "caminhão articulado.",
-                "ônibus articulados",
-                "caminhão trator.",
-                "motocicletas."
-            ],
-            correta: "motocicletas.",
-        },
-        {
-            pergunta: `As vias públicas rurais abertas à circulação, de acordo
-                com sua utilização classificam-em:`,
-            alternativas: [
-                "rodovias e perímetros.",
-                "rodovias e urbanas.",
-                "rodovias e perímetros.",
-                "rodovias e estradas."
-            ],
-            correta: "rodovias e estradas.",
-        },
-        {
-            pergunta: "Vias locais são aquelas:",
-            alternativas: [
-                `bloqueadas ao trânsito local, sem cruzamentos, com entradas e
-                saídas especiais e que permitem trânsito livre.`,
-                "que se destinam apenas ao acesso às áreas restritas.",
-                "rua sem saídas, onde não existe comercio.",
-                "rua onde não existe sinalização para trânsito de veículos."
-            ],
-            correta: "que se destinam apenas ao acesso às áreas restritas.",
-        },
-        {
-            pergunta: `Os veículos, quanto à categoria, classificam-se em:`,
-            alternativas: [
-                `oficial, passageiros, carga, representação diplomática e de
-                aprendizagem.`,
-                `oficial, representação diplomática, particular, aluguel e de
-                aprendizagem.`,
-                "oficial, do governo federal, samu e corpo de bombeiros.",
-                `oficial, representação diplomática, particular, segurança e de
-                aprendizagem`
-            ],
-            correta: `oficial, representação diplomática, particular, aluguel e
-                de aprendizagem.`,
-        },
-        {
-            pergunta: `O registrador instantâneo e inalterável de velocidade e
-                tempo (tacógrafo) é equipamento obrigatório para: `,
-            alternativas: [
-                "todos os tipos de veículos de transporte de passageiros.",
-                `os veículos de transporte de passageiros com mais de dez
-                lugares.`,
-                "somente caminhões",
-                "é obrigatório em veículos automotores."
-            ],
-            correta: `os veículos de transporte de passageiros com mais de dez
-                lugares.`,
-        },
-        {
-            pergunta: `Um condutor, ao dirigir numa via arterial, sem
-                sinalização de regulamentação de velocidade, poderá trafegar,
-                no máximo, a:`,
-            alternativas: ["80 km/h", "50 km/h", "60 km/h", "40 km/h"],
-            correta: "60 km/h",
-        },
-        {
-            pergunta: `Para ser habilitado na categoria 'E', o candidato a
-            condutor deve: `,
-            alternativas: [
-                "ser maior de dezoito anos.",
-                "ser maior de vinte e um anos.",
-                "estar habilitado, no mínimo, há um ano na categoria 'C'.",
-                "nenhuma das citadas acima."
-            ],
-            correta: "estar habilitado, no mínimo, há um ano na categoria ‘C’.",
-        },
-        {
-            pergunta: `A velocidade mínima em uma rodovia sinalizada com a
-                velocidade máxima de 100 km/h é:`,
-            alternativas: ["50 km/h", "40 km/h", "80 km/h", "100 km/h"],
-            correta: "50 km/h",
-        },
-        {
-            pergunta: `Um condutor, ao dirigir numa via local, sem sinalização
-                de regulamentação de velocidade, poderá trafegar, no máximo,
-                a:`,
-            alternativas: ["40 km/h.", "30 km/h.", "60 km/h.", "80 km/h."],
-            correta: "30 km/h.",
-        },
-        {
-            pergunta: `Com relação à CNH e à Permissão de Dirigir, considere:
-                <br>I – A CNH é de porte obrigatório quando o condutor estiver à
-                direção do veículo.
-                <br>II – A Permissão para Dirigir é de porte obrigatório quando
-                o condutor estiver à direção do veículo.
-                <br>III – A CNH pode ser apresentada em copia reprográfica
-                autenticada pelo DETRAN.
-                <br>É correto o que se afirma em:`,
-            alternativas: [", II e III", "II e III", "I e II", "I e III"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `No que diz respeito à Permissão para Dirigir, considere:
-                <br>I. Ao candidato aprovado nos exames de habilitação será
-                conferida a Permissão para Dirigir.
-                <br>II. A Permissão para Dirigir tem validade de um ano.
-                <br>III. A Permissão para Dirigir será cassada assim que o
-                condutor cometer a primeira infração de trânsito.
-                <br>É correto o que se afirmar em:`,
-            alternativas: ["I e III", "I, II e III", "I e II", "II e III"],
-            correta: "I e II",
-        },
-        {
-            pergunta: `Para expedição de um novo Certificado de Registro de
-                Veículo, que teve substituição de qualquer equipamento de
-                segurança especificado pelo fabricante, exige-se:`,
-            alternativas: [
-                "a nota fiscal dos equipamentos notificados.",
-                `um certificado de segurança expedido por órgão ou entidade de
-                metrologia legal.`,
-                `um certificado de licenciamento expedido por órgão ou entidade
-                de metrologia legal.`,
-                "a nota fiscal do serviço executado.",
-            ],
-            correta: `um certificado de segurança expedido por órgão ou entidade
-                de metrologia legal.`,
-        },
-        {
-            pergunta: `No que tange o licenciamento de veículo, considere:
-                <br>I – Todo veículo automotor deve ser licenciado anualmente
-                pelo órgão executivo de transito do Estado ou do Distrito
-                Federal.
-                <br>II – O primeiro licenciamento será feito simultaneamente ao
-                registro do veículo
-                <br>III – O veículo só será licenciado se estiverem quitados os
-                débitos relativos a tributos, encargos e multas de transito e
-                ambientais, vinculadas ao veiculo.
-                <br>É correto o que se AFIRMA EM:`,
-            alternativas: ["I e III", "II e III", "I, II e III", "III"],
-            correta: "I, II e III",
-        },
-        {
-            pergunta: "Um condutor habilitado na categoria “C” pode dirigir:",
-            alternativas: [
-                "caminhão e ônibus",
-                "caminhão",
-                "automóveis e caminhão",
-                "caminhão e todos veículos de duas rodas"
-            ],
-            correta: "automóveis e caminhão",
-        },
-        {
-            pergunta: `Segundo a classificação do Código de Trânsito Brasileiro,
-            uma via destinada apenas ao acesso às áreas restritas é chamada:`,
-            alternativas: ["secundária", "vicinais", "local", "Sem saída"],
-            correta: "local",
-        },
-        {
-            pergunta: "A renovação de exame deverá ocorrer:",
-            alternativas: [
-                "acima de 60 anos a cada 3 anos",
-                "após 65 anos a cada 3 anos",
-                "de 5 em 5 anos até 60 anos",
-                "após 50 anos a cada 5 anos até 70 anos"
-            ],
-            correta: "após 50 anos a cada 5 anos até 70 anos",
-        },
-        {
-            pergunta: `Em via urbana cuja a velocidade máxima é 60 km/h é
-                classificada de:`,
-            alternativas: ["trânsito rápido", "coletora", "arterial", "local"],
-            correta: "arterial",
-        },
-        {
-            pergunta: `O CRV – Certificado de Registro de Veículos, expedido
-                pelos órgãos executivos de trânsito dos Estados e do Distrito
-                Federal:`,
-            alternativas: [
-                "não é de porte obrigatório",
-                `é de porte obrigatório, devendo ser apresentado somente ao
-                original`,
-                "é de porte obrigatório na abordagem policial",
-                "é um documento de propriedade"
-            ],
-            correta: "é um documento de propriedade",
-        },
-        {
-            pergunta: `Um condutor com 72 anos de vida, é habilitado deste do
-                18 anos, está com sua CNH vencida, deverá renovar com:`,
-            alternativas: [
-                "02 em 02 anos.",
-                "05 em 05 anos.",
-                "03 em 03 anos.",
-                "10 em 10 anos."
-            ],
-            correta: "03 em 03 anos.",
-        },
-        {
-            pergunta: `Dentre as medidas necessárias para aumentar a segurança
-                no trânsito pode-se destacar a:`,
-            alternativas: [
-                "a vistoria permanente de veículos importados.",
-                "a atuais leis",
-                "à aplicação dos radares",
-                "intensificação da fiscalização."
-            ],
-            correta: "intensificação da fiscalização.",
-        },
-        {
-            pergunta: `Com relação a via terrestre considere:
-                <br>I-O CTB considera vias terrestres, urbanas e rurais as ruas,
-                as avenidas, os logradouros, os caminhos, as pessagens, as
-                estradas e as rodovias.
-                <br>II-O CTB considera via terrestre, as praias abertas a
-                circulação publica
-                <br>III-O CTB considera via terrestre as vias internas
-                pertencentes aos condomínios constituídos por unidades autônomas
-                <br>É correto o que se afirmar em:`,
-            alternativas: ["I, II", "I, II e III", "I", "II e III"],
-            correta: "I, II e III",
-        },
-        {
-            pergunta: `As Juntas Administrativas de Recursos de Infrações –
-                JARI, são órgãos colegiados responsáveis pelo julgamento de
-                recursos interpostos contra penalidades impostas por órgãos
-                executivos de transito. Contra decisões de uma JARI que
-                funcione junto a um órgão executivo de trânsito municipal, cabe
-                recurso ao:`,
-            alternativas: ["DETRAN", "CONTRAN", "CETRAN", "CONTRADIFE"],
-            correta: "CETRAN",
-        },
-        {
-            pergunta: `A via urbana na qual os veículos tem prioridade de
-                trânsito é a:`,
-            alternativas: [
-                "arterial", "visceral", "coletora", "transito rápido"
-            ],
-            correta: "transito rápido",
-        },
-        {
-            pergunta: `A habilitação exigida para um condutor dirigir veículos
-                motorizados utilizados em transporte de carga, cujo peso bruto
-                total exceda a 3.500 kg, corresponde à categoria:`,
-            alternativas: ["D", "E", "C", "B"],
-            correta: "C",
-        },
-        {
-            pergunta: `Quando não estiverem sinalizadas, as velocidades máximas
-                permitidas nas vias Coletoras, Locais e Arteriais são,
-                respectivamente:`,
-            alternativas: [
-                "60 km/h, 40 km/h e 70 km/h",
-                "40 km/h, 30 km/h e 60 km/h",
-                "80 km/h, 60 km/h e 40 km/h",
-                "30 km/h, 40 km/h e 60 km/h"
-            ],
-            correta: "40 km/h, 30 km/h e 60 km/h",
-        },
-        {
-            pergunta: "Para evitar a aquaplanagem, deve-se:",
-            alternativas: [
-                `reduzir a velocidade sob chuva intensa, exceto se a pista
-                estiver em bom estado.`,
-                "acelerar para fugir do aquaplanagem.",
-                "evitar viajar quando houver chuva.",
-                "evitar usar os freios ao trafegar sobre poças de agua"
-            ],
-            correta: "evitar usar os freios ao trafegar sobre poças de agua",
-        },
-        {
-            pergunta: `Um condutor, ao dirigir numa via local, sem sinalização
-                de regulamentação de velocidade, poderá trafegar, no máximo:`,
-            alternativas: ["60 km/h", "40 km/h", "30 km/h", "50 km/h"],
-            correta: "30 km/h",
-        },
-        {
-            pergunta: `Dentre as medidas necessárias para aumentar a segurança
-                no trânsito pode-se destacar a:`,
-            alternativas: [
-                "a vistoria permanente de veículos importados.",
-                "a atuais leis",
-                "à aplicação dos radares",
-                "intensificação da fiscalização."
-            ],
-            correta: "intensificação da fiscalização.",
-        },
-        {
-            pergunta: `Com relação ao Exame de Direção Veicular, considere:
-                <br>I. Desobedecer à sinalização semafórica constitui falta
-                eliminatória no Exame de Direção Veicular.
-                <br>II. O candidato que cometer uma falta grave será
-                automaticamente reprovado no Exame de Direção Veicular.
-                <br>III. O candidato à obtenção da CNH na categoria A que
-                iniciar a prova sem estar com o capacete devidamente ajustado
-                à cabeça será automaticamente reprovado no Exame de Direção
-                Veicular.
-                <br>É correto o que se afirma em`,
-            alternativas: ["I, II e III", "II e III", " I e II", "I e III"],
-            correta: "I e III",
-        },
-        {
-            pergunta: "Sessenta quilômetros por hora é a velocidade.",
-            alternativas: [
-                "máxima permitida em vias de trânsito rápido.",
-                `máxima permitida em via arteriais, quando não houver
-                sinalização indicadora.`,
-                "máxima permitida em via trânsito rápido.",
-                "máxima permitida em via colhedora."
-            ],
-            correta: `máxima permitida em via arteriais, quando não houver
-                sinalização indicadora.`,
-        },
-        {
-            pergunta: `O aluno que vai fazer o exame prática de motocicleta no
-                Detran, durante o exame ele derruba o cone de balizamento.
-                Nesse caso ele será: `,
-            alternativas: [
-                `aprovado, desde que não cometa nenhuma outra falta, de
-                qualquer natureza.`,
-                "reprovado, devendo remarcar outro exame prático.",
-                "aprovado, pois é uma falta eliminatória.",
-                "aprovado."
-            ],
-            correta: " reprovado, devendo remarcar outro exame prático.",
-        },
-        {
-            pergunta: `Um condutor, dirigindo um automóvel por uma rodovia com
-                pista dupla não sinalizada, NÃO poderá ter a sua velocidade
-                mínima inferior a:`,
-            alternativas: ["60 km/h", "80 km/h", "55 km/h", "110 km/h"],
-            correta: "55 km/h",
-        },
-        {
-            pergunta: `As vias consideradas rurais em relação a qualquer outra
-                são as:`,
-            alternativas: [
-                "Locais.", "Estradas.", "Estradas pavimentadas", "Vicinais"
-            ],
-            correta: "Estradas.",
-        },
-        {
-            pergunta: `Os veículos podem ser classificados quanto à espécie de
-                que forma:  `,
-            alternativas: [
-                " Misto, elétrico, especial e aprendizagem.",
-                "Passageiros, carga, misto, especial, coleção e oficial.",
-                "Aluguel, Passageiros, carga, misto, especial e coleção.",
-                "Passageiros, carga, misto, especial, coleção e automotor.",
-                `Passageiros, carga, misto, especial, coleção, tração e
-                competição`
-            ],
-            correta: `Passageiros, carga, misto, especial, coleção, tração e
-                competição`,
-        },
-        {
-            pergunta: `Com relação a via terrestre considere:
-                <br>I-O CTB considera vias terrestres, urbanas e rurais as ruas,
-                as avenidas, os logradouros, os caminhos, as pessagens, as
-                estradas e as rodovias.
-                <br>II-O CTB considera via terrestre, as praias abertas a
-                circulação publica
-                <br>III-O CTB considera via terrestre as vias internas
-                pertencentes aos condomínios constituídos por unidades autônomas
-                <br>É correto o que se afirmar em:`,
-            alternativas: ["I, II", "I, II e III", "I", "II e III"],
-            correta: "I, II e III",
-        },
-        {
-            pergunta: `A velocidade mínima permitida em uma via arterial sem
-                sinalização é:`,
-            alternativas: ["40 km/h", "30 km/h", "50 km/h", "60 km/h"],
-            correta: "30 km/h",
-        },
-        {
-            pergunta: `Em via urbana cuja a velocidade máxima é 60 km/h é
-                classificada de:`,
-            alternativas: ["trânsito rápido", "coletora", "arterial", "local"],
-            correta: "arterial",
-        },
-        {
-            pergunta: "A velocidade compatível com a segurança é:",
-            alternativas: [
-                `de acordo com a situação e sinalização da via, o local e a
-                visibilidade.`,
-                "de acordo com a situação e sinalização da via.",
-                "80 km/h, nas vias coletora",
-                "60 km/h nas vias coletora"
-            ],
-            correta: `de acordo com a situação e sinalização da via, o local e a
-                visibilidade.`,
-        },
-        {
-            pergunta: `O CRV – Certificado de Registro de Veículos, expedido
-                pelos órgãos executivos de trânsito dos Estados e do Distrito
-                Federal:`,
-            alternativas: [
-                "não é de porte obrigatório",
-                `é de porte obrigatório, devendo ser apresentado somente ao
-                original`,
-                "é de porte obrigatório na abordagem policial",
-                "é um documento de propriedade"
-            ],
-            correta: "é um documento de propriedade",
-        },
     ],
     "Direção Defensiva": [
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `O condutor que tenha o propósito de ultrapassar um
+                veículo de transporte coletivo que esteja parado, efetuando
+                embarque e desembarque, devera:`,
+            alternativas: [
+                `reduzir a velocidade e piscar os faróis, com vista a viabilizar
+                a segurança dos pedestres`,
+                `reduzir a velocidade ou parar o veículo, com vistas a
+                viabilizar a segurança dos pedestres`,
+                `reduzir a velocidade e acionar os faróis altos do veículo, com
+                vistas a viabilizar a segurança dos pedestres`,
+                `reduzir a velocidade e aplicar pequenos toques na buzina, com
+                vistas a viabilizar a segurança dos pedestres`
+            ],
+            correta: `reduzir a velocidade ou parar o veículo, com vistas a
+                viabilizar a segurança dos pedestres`,
         },
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `Sobre o elemento básico da direção defensiva PREVISÃO,
+                marcar alternativa INCORRETA:  `,
+            alternativas: [
+                `as previsões podem ser desenvolvidas no uso do veículo pelo
+                condutor`,
+                `o condutor não precisa estar atento as condições do tempo para
+                prever situações de riscos`,
+                `as previsões devem estar sempre em primeiro plano, por questões
+                de segurança do condutor`,
+                "nenhuma das questões acima"
+            ],
+            correta: `o condutor não precisa estar atento as condições do tempo
+                para prever situações de riscos`,
+        },
+        {
+            pergunta: `Das alternativas abaixo, quais estão relacionadas com as
+                condições adversas de VIA:`,
+            alternativas: [
+                "buracos e pernoite",
+                "chuvas e curvas",
+                "tipo de pavimentação e acostamento",
+                "rodovias menores e congestionamento"
+            ],
+            correta: "tipo de pavimentação e acostamento",
+        },
+        {
+            pergunta: `No acidente ocasionado pelo desrespeito à sinalização,
+                pode-se afirmar que houve: `,
+            alternativas: [
+                "Imprudência",
+                "Falta de atenção e fadiga.",
+                "Falta de habilitado por conta do condutor.",
+                "Motorista desatento a sinalização."
+            ],
+            correta: "Imprudência.",
+        },
+        {
+            pergunta: `Os condutores de motocicletas e ciclomotores devem
+                conhecer e respeitar a legislação, a fim de trafegar com
+                segurança, conforme os preceitos da Direção Defensiva. Sendo
+                assim, analise as afirmativas abaixo:
+                <br>I- Para condutores de motocicletas e ciclomotores é
+                obrigatório o uso de viseiras ou óculos de proteção.
+                <br>II- É permitida a circulação de ciclomotores nas vias
+                urbanas de trânsito rápido
+                <br>III-Para condutores de motocicletas e ciclomotores é
+                obrigatório manter o farol aceso quando em circulação, durante
+                o dia ou a noite.
+                <br>É correto o que consta em:`,
+            alternativas: ["I, II e III", "I e III", "II e III", "I"],
+            correta: "I e III",
+        },
+        {
+            pergunta: "O condutor que assume comportamento seguro é aquele que",
+            alternativas: [
+                "Aquele determina que, quem chega primeiro é sua vez",
+                `Percebe antecipadamente os riscos e age prontamente para
+                evita-los ou controla-los`,
+                "Calibra os pneus de seu veículo diariamente",
+                "Mantém seu veículo em ordem"
+            ],
+            correta: `Percebe antecipadamente os riscos e age prontamente para
+                evita-los ou controla-los`,
+        },
+        {
+            pergunta: `Em certas épocas do ano não é frequente o fato de os
+                condutores se depararem com fumaça produzida pelas queimadas em
+                terrenos junto a pista. O procedimento seguro é:  `,
+            alternativas: [
+                `Acionar o farol baixo e acelerar, para afastar-se o mais breve
+                possível do trecho de fumaça`,
+                "Acionar o farol alto para se ter uma visão melhor da via",
+                `Reduzir a velocidade, pois a fuligem proveniente da queimada
+                pode reduzir a aderência do veículo ao piso.`,
+                "Acionar a luz de posição e seguir viagem, não no perigo"
+            ],
+            correta: `Reduzir a velocidade, pois a fuligem proveniente da
+                queimada pode reduzir a aderência do veículo ao piso.`,
+        },
+        {
+            pergunta: `A forma correta de para o carro em uma ladeira, com
+                acentuado aclive, ou seja, no sentido da subida, a fim de
+                aguardar a abertura do semáforo, é:  `,
+            alternativas: [
+                "Segurar o freio somente com o freio de serviço (pedal);",
+                "Segurar o freio somente com o freio de serviço (pedal);",
+                `Acionar os freios de serviço (pedal) e colocar o veículo
+                simultaneamente em ponto morto;`,
+                `Acionar o freio de estacionamento (mão) e engatar a 1ª marcha,
+                mantendo a embreagem levemente solta para sair mais rápido.`
+            ],
+            correta: `Acionar os freios de serviço (pedal) e colocar o veículo
+                simultaneamente em ponto morto;`,
+        },
+        {
+            pergunta: `Sobre o cinto de segurança, podemos dizer que é INCORRETO
+                afirmar: `,
+            alternativas: [
+                `O cinto de três pontos é aquele que se prende ao peito e ao
+                quadril ao mesmo tempo;`,
+                "O cinto de três pontos é ineficaz;",
+                "O cinto pélvico é aquele que se prende à cintura;",
+                "O cinto torácico é aquele que se prende ao peito."
+            ],
+            correta: "O cinto de três pontos é ineficaz;",
+        },
+        {
+            pergunta: "O condutor que age em favor da segurança no trânsito ",
+            alternativas: [
+                `Guarda distância de segurança entre o veículo que dirige e o
+                que segue a sua frente`,
+                `ultrapassa veículo lento em uma curva em pista de mão dupla sem
+                sinalização horizontal`,
+                `conhece e troca sozinho peças defeituosas do seu veículo
+                mantendo-o seguro e bem conservado.`,
+                `calibra periodicamente a pressão dos pneus mantendo-a acima dos
+                valores especificados pelo fabricante.`
+            ],
+            correta: `Guarda distância de segurança entre o veículo que dirige e
+                o que segue a sua frente`,
         },
     ],
     "Primeiros Socorros": [
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `Ao se deparar com um acidente, uma pessoa quer ajudar,
+                mas não consegue cuidar dos acidentados, porque sente-se mal ao
+                ver sangramentos e lesões. Nessa situação, a pessoa pode ajudar
+                tomando medidas para afastar o perigo e evitar novos acidentes.
+                <br>Ela deve, portanto:
+                <br>I- Ligar a chave de ignição dos veículos acidentados
+                <br>II - Sinalizar o local para evitar novos acidentes e
+                atropelamentos
+                <br>III - Definir um local para melhor colocação do triângulo.
+                <br>São condutas de primeiros socorros consideradas corretas as
+                descritas em:`,
+            alternativas: ["I e II", "I e III", "I, II e III", "II e III"],
+            correta: "II e III",
         },
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: "Em uma parada cardíaca e respiratória a vítima:  ",
+            alternativas: [
+                `Apresenta ausência de movimentos respiratórios e de batimentos
+                cardíacos;`,
+                "Conversa com naturalidade, mas ofegantemente;",
+                "Está consciente, mas se debate;",
+                "Está sempre consciente e apresentando batimentos cardíacos."
+            ],
+            correta: `Apresenta ausência de movimentos respiratórios e de batimentos
+                cardíacos;`,
+        },
+        {
+            pergunta: "Para realizar reanimação cardiopulmonar deve-se: ",
+            alternativas: [
+                `colocar a vítima com as costas ao chão, liberar vias
+                respiratórias, realizar respiração, certifica e compressões ao
+                tórax.`,
+                "transportar a vítima antes de quaisquer procedimentos;",
+                `Manter a vítima deitada de lado e aguardar o socorro
+                profissional;`,
+                "Colocar a vítima de bruços e massagear as costas."
+            ],
+            correta: `colocar a vítima com as costas ao chão, liberar vias
+                respiratórias, realizar respiração, certifica e compressões ao
+                tórax.`,
+        },
+        {
+            pergunta: "A omissão de socorro nos acidentes nas estradas:",
+            alternativas: [
+                "Se estiver com pressa siga em frente, o socorro logo chegará;",
+                `Além de ser uma irresponsabilidade é crime previsto no Código
+                de Trânsito Brasileiro;`,
+                `Se o seu veículo estiver transportando criança você não deve
+                socorrer;`,
+                `Se não foi você o causador não precisa ajudar, pois você não é
+                responsável`
+            ],
+            correta: `Além de ser uma irresponsabilidade é crime previsto no Código
+                de Trânsito Brasileiro;`,
+        },
+        {
+            pergunta: `Em uma via local, cuja velocidade máxima permitida é de
+                40 km/h, ocorreu uma colisão de um carro com uma arvore. O
+                acidente aconteceu às 12:00 horas e era um dia de chuva.
+                Para essa situação recomenda-se que a distância do acidente para
+                o início da sinalização deve ser de: `,
+            alternativas: [
+                "80 metros longos de um adulto",
+                "40 passos longos de um adulto",
+                "40 metros longos de um adulto",
+                "80 passos longos de um adulto"
+            ],
+            correta: "80 passos longos de um adulto",
+        },
+        {
+            pergunta: "Nas fraturas abertas ocorre o seguinte:  ",
+            alternativas: [
+                `O osso não quebra e há o rompimento da pele, é o que chamamos
+                de fratura exposta`,
+                `O osso se quebra e há o rompimento da pele, é o que chamamos
+                de fratura exposta.`,
+                "Quando o osso quebra internamente",
+                `O osso não se quebra e há o rompimento da pele, é o que
+                chamamos de fratura interna`
+            ],
+            correta: `O osso se quebra e há o rompimento da pele, é o que
+                chamamos de fratura exposta.`,
+        },
+        {
+            pergunta: `Ao prestar atendimento às vítimas que se encontrem em
+                estado de choque é correto:  `,
+            alternativas: [
+                `Retirar da boca da vítima objetos, dentaduras, pontes, aparelho
+                dental, etc.;`,
+                "Manter a vítima em pé para não perde o controle da situação;",
+                `Se a vítima estiver tendo vomito manter a cabeça da mesma para
+                cima;`,
+                "Fazer massagem cardíaca."
+            ],
+            correta: `Retirar da boca da vítima objetos, dentaduras, pontes, aparelho
+                dental, etc.;`,
+        },
+        {
+            pergunta: ` Em determinado ponto de sua viagem, um motorista
+                depara-se com um capotamento que acabara de acontecer. Nesse
+                caso, deve-se:
+                <br>I - Garantir os itens básicos em relação à segurança e
+                solicitar socorro
+                <br>II - Remover as vítimas do veículo
+                <br>III - Informar, ouvir, aceitar e ser solidário com a vítima
+                <br>É correto que consta em:`,
+            alternativas: ["I e III", "I e II", "I, II e III", "II e III"],
+            correta: "I e III",
+        },
+        {
+            pergunta: `Após ter causado um atropelamento, o motorista que
+                conduzia o veiculo chamou o socorro especializado para socorrer
+                a vitima, e, enquanto aguardava o resgate, adotou os seguintes
+                procedimentos:
+                <br>I. manteve a calma e removeu a vítima
+                <br>II. Esperou as autoridades para dar início à sinalização
+                local e promover a interrupção da fluidez do tráfego
+                <br>III. Isolou o local do acidente e evitou a presença de
+                curiosos
+                <br>IV. Interrompeu a fluidez do tráfego e obrigou os pedestres
+                a ajudar
+                <br>V. discutiu sobre a situação e deu ordens aos
+                socorristas do resgate.
+                <br>Em relação aos procedimentos adequados de primeiros
+                socorros, é correto o que consta APENAS em`,
+            alternativas: ["III e IV", "I e II", "III", "II e III"],
+            correta: "III",
+        },
+        {
+            pergunta: ` Um motociclista sofre um acidente, em uma via urbana,
+                ao tentar ultrapassar pela direita um caminhão em uma curva.
+                Enquanto espera-se a chegada do socorro, o motorista do caminhão
+                deve:
+                <br>I-Evitar movimentar a vítima
+                <br>II-Retirar o capacete da vítima para verificar seu estado de
+                consciência
+                <br>III-Retirar a vítima da pista, colocando-a na calçada.
+                <br>É correto o que consta APENAS em`,
+            alternativas: ["I e II", "II e III", "I", "II"],
+            correta: "I",
         },
     ],
     "Meio Ambiente e Cidadania": [
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `Analise os itens:
+                <br>I- Atmosfera, solo, oceanos e pontes.
+                <br>II- Rochas, água, microrganismos e florestas.
+                <br>III-edifícios, chuvas, estradas e minerais.
+                <br>IV-subsolo, animais, montanhas e viadutos.
+                <br>Dois elementos naturais e dois elementos criados pelo homem,
+                que compões o meio ambiente estão dispostos em APENAS em:`,
+            alternativas: ["II e III", "I e II", "III", "I"],
+            correta: "III",
         },
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `Além dos órgãos especializados que se empenham na
+                preservação do Meio Ambiente também são responsáveis:`,
+            alternativas: [
+                "Os condutores de alguns veículos automotores;",
+                "Motoristas, pedestres e passageiros;",
+                "condutores veículos que transportam Cargas Perigosas;",
+                "Apenas os motociclistas."
+            ],
+            correta: "Motoristas, pedestres e passageiros;",
+        },
+        {
+            pergunta: "É fator de integração entre trânsito e meio ambiente:",
+            alternativas: [
+                `A observação e o registro dos elementos que compõem o meio
+                ambiente`,
+                "As normas do Código de Trânsito Brasileiro",
+                "As normas do CONAMA (Conselho Nacional do Meio Ambiente)",
+                "Todas as alternativas estão corretas"
+            ],
+            correta: "Todas as alternativas estão corretas",
+        },
+        {
+            pergunta: "Na sociedade, o trânsito contribui diariamente para:",
+            alternativas: [
+                "Deslocarmo-nos de um local para o outro, como motoristas.",
+                `Deslocarmo-nos de um ponto a outro, como passageiros ou
+                pedestres.`,
+                "Enviarmos as mercadorias que produzimos.",
+                "Recebermos os produtos que consumimos.",
+                "Todas as alternativas"
+            ],
+            correta: "Todas as alternativas",
+
+        },
+        {
+            pergunta: `O CONAMA e as agências ambientais do estado e do
+                município têm como principal preocupação: `,
+            alternativas: [
+                "A conservação dos equipamentos de segurança das estradas.",
+                "A orientação do fluxo de veículos nas vias urbanas.",
+                "A fiscalização da produção de veículos.",
+                "A defesa da saúde e do meio ambiente."],
+            correta: "A defesa da saúde e do meio ambiente.",
+        },
+        {
+            pergunta: `As concentrações de poluentes do ar nas cidades são
+                maiores nos meses frios. Este fato ocorre devido: `,
+            alternativas: [
+                "Ao excesso de veículos em circulação.",
+                "Há maior dificuldade de dispersão dos poluentes.",
+                "Há maior emissão de poluentes.",
+                "Há desregularem dos motores causada pelo frio."
+            ],
+            correta: "Há maior dificuldade de dispersão dos poluentes.",
+        },
+        {
+            pergunta: "Os problemas de saúde causados pela poluição do ar são:",
+            alternativas: [
+                "Doenças do aparelho digestivo.",
+                "Doenças respiratórias.",
+                "Alterações visuais.",
+                "Dores de cabeça."
+            ],
+            correta: "Doenças respiratórias.",
+        },
+        {
+            pergunta: `A educação para o trânsito é um direito de todos e
+                constitui um dever prioritário para: `,
+            alternativas: [
+                "Os órgãos e entidades do Sistema Nacional de Trânsito.",
+                "As autoescolas, apenas.",
+                "As escolas de 1º e 2º graus, apenas.",
+                "O DETRAN - Departamento Estadual de Trânsito, apenas."
+            ],
+            correta: "Os órgãos e entidades do Sistema Nacional de Trânsito.",
+        },
+        {
+            pergunta: `O catalisador, dispositivo de controle de emissão de
+                gases, conectado ao escapamento dos veículos, objetiva:  `,
+            alternativas: [
+                "Diminuir o ruído do motor.",
+                "Economizar combustível.",
+                "Diminuir a emissão de gases.",
+                "Aumentar a potência do motor"
+            ],
+            correta: "Diminuir a emissão de gases.",
+        },
+        {
+            pergunta: `Existem certos princípios que contribuem para a direção
+                segura, bem como contribuem para melhorar o relacionamento das
+                pessoas no trânsito. Um desses princípios é a
+                co-responsabilidade pela vida social, que consiste em:`,
+            alternativas: [
+                `Comportamento que depende somente das pessoas e não do
+                Governo`,
+                "Valorizar comportamentos necessários a segurança do trânsito",
+                "Não depende do comportamento das pessoas",
+                "Sempre o trânsito e governo, independeram das pessoas"
+            ],
+            correta: `Valorizar comportamentos necessários a segurança do
+                trânsito`,
         },
     ],
     "Mecânica Básica": [
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `A embreagem,  composta basicamente de um disco e um
+                platô, tem a função principal:`,
+            alternativas: [
+                "Não acavalar as marchas",
+                "Permitir ligar o veículo mais facilmente",
+                "Facilitar o funcionamento do motor",
+                `Ligar e desligar a força motriz do motor da parte restante da
+                transmissão`],
+            correta: `Ligar e desligar a força motriz do motor da parte restante
+                da transmissão`,
         },
         {
-            pergunta: "",
-            alternativas: ["", "", "", ""],
-            correta: "",
+            pergunta: `A finalidade da suspensão e dos amortecedores é manter a
+                estabilidade do veículo. Quando há desgaste desses intens do
+                veículo.`,
+            alternativas: [
+                `Haverá redução do nível do óleo do sistema de transmissão,
+                provocando travamento do cambio`,
+                `Poderão provocar o travamento do direção, principalmente em
+                frenagens e curva`,
+                `Poderão causar a perda de controle do veículo, principalmente
+                frenagens e curvas`,
+                `Poderá ocorrer esvaziamento da água do radiador, fundindo o
+                motor`
+            ],
+            correta: `Poderão causar a perda de controle do veículo, principalmente
+                frenagens e curvas`,
+        },
+        {
+            pergunta: `O condutor, após passar sobre uma via alagada, deve
+                testar a:`,
+            alternativas: [
+                "Eficiência dos freios, acionando o pedal com simples toques",
+                `Embreagem e a eficiência dos freios, acionando os pedais com a
+                máxima pressão`,
+                "Eficiência dos freios, acionando lentamente o freio de mão",
+                "Eficência dos freios, acionando o pedal com máxima pressão"
+            ],
+            correta: `Eficiência dos freios, acionando o pedal com simples
+            toques`,
+        },
+        {
+            pergunta: `A estabilidade do veículo também está relacionada com os
+                pneus. O condutor deve conferir periodicamente e regularmente.
+                <br>I - A calibragem dos pneus
+                <br>II - O desgastes dos pneus
+                <br>III - A existência de possíveis deformações na carcaça
+                <br>É correto o que consta em:`,
+            alternativas: ["I, II e III", "II", "I", "III"],
+            correta: "I, II e III",
+        },
+        {
+            pergunta: `Ao fazer a verificação dos sistema de luzes do veículo,
+                o proprietário notou que, quando acionava a luz indicadora de
+                direção (pisca-pisca) para a esquerda, a luz indicadora de
+                função no painel funcionava compassadamente. Quando acionava
+                para a direita, a luz disparava em velocidade maior. A causa
+                mais provável deste problema é que:`,
+            alternativas: [
+                "O comutador de ignição está danificado",
+                "O fusível do sistema está queimado",
+                "A bateria do veículo está com meio carga",
+                "Há uma lâmpada deste sistema queimada"
+            ],
+            correta: "Há uma lâmpada deste sistema queimada",
+        },
+        {
+            pergunta: `O condutor defensivo deve conhecer o fato de que, em
+                geral, nos veículos sem o sistema ABS de freios, a força de
+                frenagem.`,
+            alternativas: [
+                "Nas rodas dianteiras é menor que na traseira",
+                "É unifome entre as rodas",
+                "É aplicada somente nas rodas dianteiras",
+                "Nas rodas traseiras é menor que na dianteira"
+            ],
+            correta: "É aplicada somente nas rodas dianteiras",
+        },
+        {
+            pergunta: `Considere a ilustração abaixo;
+                <img src="imagens/ppa.png"
+                alt="Bateria" style="max-width:300px;"><br>
+                Quando o nível de água deste tipo de bateria de um veículo
+                automotor estiver abaixo do normal, o motorista deverá:</br>`,
+            alternativas: [
+                "Substituir a bateria por uma nova",
+                "Completar com água destilada",
+                "Aumentar a amperagem do regulador",
+                "Completar com água e aditivo"
+            ],
+
+            correta: "Completar com água destilada",
+        },
+        {
+            pergunta: "Para remover a bateria de um veículo deve-se:",
+            alternativas: [
+                "Simplesmente abra o capô e retirar",
+                "Soltar primeiro o cabo do negativo e depois o do positivo",
+                "Soltar primeiro o cabo do positivo e depois o do negativo",
+                "Não sei como proceder para retirar"
+            ],
+            correta: `Soltar primeiro o cabo do negativo e depois o do
+                positivo`,
+        },
+        {
+            pergunta: `Num estouro ou esvaziamento súbito de um pneus, o
+                condutor deve.`,
+            alternativas: [
+                `Deixar o carro perder velocidade por si só, segurando
+                firmemente o volante e, depois, frear suavemente`,
+                "Colocar a marcha em ponto morto",
+                `Virar o volante para o lado inverso do pneu furado e puxar o
+                freio de mão`,
+                "Virar o volante para um lado e para o outro sucessivamente"
+            ],
+            correta: `Deixar o carro perder velocidade por si só, segurando
+                firmemente o volante e, depois, frear suavemente`,
+        },
+        {
+            pergunta: "A função da bateria é:",
+            alternativas: [
+                "Gerar movimento às rodas",
+                "Aumentar a potência do motor",
+                "Armazenar e fornecer corrente elétrica",
+                "Regular a potência do motor"
+            ],
+            correta: "Armazenar e fornecer corrente elétrica",
         },
     ],
 };
