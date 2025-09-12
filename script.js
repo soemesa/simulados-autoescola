@@ -125,7 +125,10 @@ function salvarResultados() {
                         .querySelector(`input[name="q${dIndex}_${i}"]:checked`)
                         ?.value.trim() === alt
                 ) {
-                    detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
+                    detalhesHTML +=
+                        `<div>
+                            <span class="errada">${letra}. "${alt}"</span>
+                        </div>`;
                 }
             });
             detalhesHTML += `</div>`;

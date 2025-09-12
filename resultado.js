@@ -9,3 +9,8 @@ document.getElementById("detalhesBtn").addEventListener("click", function () {
         detalhesHTML || "<p>Nenhum detalhamento encontrado.</p>";
     this.style.display = "none"; // Esconde o botão após mostrar detalhes
 });
+
+document.getElementById("finalizarBtn").addEventListener("click", function () {
+    // Redireciona para o menu ou página inicial
+    window.location.href = "menu.html";
+});

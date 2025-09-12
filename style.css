@@ -155,6 +155,33 @@ input[type="radio"] {
     background: #0056b3;
     transform: scale(1.05);
 }
+button {
+    padding: 12px 32px;
+    margin: 18px 8px 0 8px;
+    font-size: 1.1em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0001;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover,
+button:focus {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+#finalizarBtn {
+    background: #28a745;
+}
+
+#finalizarBtn:hover,
+#finalizarBtn:focus {
+    background: #218838;
+}
 @media (max-width: 600px) {
     .disciplinas-grid {
         flex-direction: column;
