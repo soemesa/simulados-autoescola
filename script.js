@@ -15,7 +15,7 @@ detectarPerguntasRepetidasNaTela();
 document.getElementById("enviar").addEventListener("click", function (e) {
     e.preventDefault();
     const disciplinaSelecionada =
-        document.getElementById("menuDisciplina").value;
+        localStorage.getItem("disciplinaSelecionada") || "todas";
 
     let resultadoHTML = "<h3>Resultados:</h3>";
     let disciplinas =
@@ -79,54 +79,58 @@ function montarQuiz(disciplinaSelecionada = "todas") {
 
 // Função para salvar resultados e detalhamento no localStorage
 function salvarResultados() {
+    // Recupera a disciplina escolhida
+    const disciplinaSelecionada =
+        localStorage.getItem("disciplinaSelecionada") || "todas";
+
     // Resultado simples
     let resultadoHTML = "<h3>Resultados por disciplina:</h3>";
-    Object.entries(questoes).forEach(
-        ([disciplina, questoesDisciplina], dIndex) => {
-            let certas = 0;
-            questoesDisciplina.forEach((q, i) => {
-                let marcada = document.querySelector(
-                    `input[name="q${dIndex}_${i}"]:checked`
-                );
-                if (
-                    marcada &&
-                    marcada.value.trim() === (q.correta ? q.correta.trim() : "")
-                ) {
-                    certas++;
-                }
-            });
-            let nota = (certas / questoesDisciplina.length) * 10;
-            resultadoHTML += `<h4>${disciplina}</h4><p><b>Nota:</b> ${nota.toFixed(
-                1
-            )}</p>`;
-        }
-    );
+    let disciplinas =
+        disciplinaSelecionada === "todas"
+            ? Object.entries(questoes)
+            : [[disciplinaSelecionada, questoes[disciplinaSelecionada]]];
+
+    disciplinas.forEach(([disciplina, questoesDisciplina], dIndex) => {
+        let certas = 0;
+        questoesDisciplina.forEach((q, i) => {
+            let marcada = document.querySelector(
+                `input[name="q${dIndex}_${i}"]:checked`
+            );
+            if (
+                marcada &&
+                marcada.value.trim() === (q.correta ? q.correta.trim() : "")
+            ) {
+                certas++;
+            }
+        });
+        let nota = (certas / questoesDisciplina.length) * 10;
+        resultadoHTML += `<h4>${disciplina}</h4><p><b>Nota:</b> ${nota.toFixed(
+            1
+        )}</p>`;
+    });
+
     // Detalhamento das respostas
     let detalhesHTML = "<h3>Detalhamento das respostas:</h3>";
-    Object.entries(questoes).forEach(
-        ([disciplina, questoesDisciplina], dIndex) => {
-            detalhesHTML += `<h4>${disciplina}</h4>`;
-            questoesDisciplina.forEach((q, i) => {
-                detalhesHTML += `<div class="detalhe-pergunta">
-                <b>Questão ${i + 1}:</b> ${q.pergunta}<br>`;
-                q.alternativas.forEach((alt, idx) => {
-                    const letra = String.fromCharCode(65 + idx);
-                    if (alt === q.correta) {
-                        detalhesHTML += `<div><span class="correta">${letra}. "${alt}"</span></div>`;
-                    } else if (
-                        document
-                            .querySelector(
-                                `input[name="q${dIndex}_${i}"]:checked`
-                            )
-                            ?.value.trim() === alt
-                    ) {
-                        detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
-                    }
-                });
-                detalhesHTML += `</div>`;
+    disciplinas.forEach(([disciplina, questoesDisciplina], dIndex) => {
+        detalhesHTML += `<h4>${disciplina}</h4>`;
+        questoesDisciplina.forEach((q, i) => {
+            detalhesHTML += `<div class="detalhe-pergunta">
+                <b>Questão ${i + 1}:</b> <b>${q.pergunta}</b><br>`;
+            q.alternativas.forEach((alt, idx) => {
+                const letra = String.fromCharCode(65 + idx);
+                if (alt === q.correta) {
+                    detalhesHTML += `<div><span class="correta">${letra}. "${alt}"</span></div>`;
+                } else if (
+                    document
+                        .querySelector(`input[name="q${dIndex}_${i}"]:checked`)
+                        ?.value.trim() === alt
+                ) {
+                    detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
+                }
             });
-        }
-    );
+            detalhesHTML += `</div>`;
+        });
+    });
 
     // Salva no localStorage
     localStorage.setItem("resultadoSimulado", resultadoHTML);
