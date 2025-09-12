@@ -1,4 +1,4 @@
-import { questoes } from "./questoes.js";
+import { questoes } from "../questoes.js";
 
 // Remove perguntas repetidas antes de montar o quiz
 removerPerguntasRepetidas(questoes);
@@ -43,7 +43,7 @@ document.getElementById("enviar").addEventListener("click", function (e) {
     });
 
     localStorage.setItem("resultadoSimulado", resultadoHTML);
-    window.location.href = "resultado.html";
+    window.location.href = "../resultado/resultado.html";
 });
 
 // Função para montar o quiz

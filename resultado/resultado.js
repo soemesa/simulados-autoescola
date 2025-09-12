@@ -12,5 +12,5 @@ document.getElementById("detalhesBtn").addEventListener("click", function () {
 
 document.getElementById("finalizarBtn").addEventListener("click", function () {
     // Redireciona para o menu ou página inicial
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 });

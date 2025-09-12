@@ -1,4 +1,4 @@
-import { questoes } from "./questoes.js";
+import { questoes } from "../questoes.js";
 
 const grid = document.getElementById("disciplinasGrid");
 
@@ -8,7 +8,7 @@ btnTodas.className = "disciplina-btn";
 btnTodas.textContent = "Todas as disciplinas";
 btnTodas.onclick = () => {
     localStorage.setItem("disciplinaSelecionada", "todas");
-    window.location.href = "simulado.html";
+    window.location.href = "../formulario/formulario.html";
 };
 grid.appendChild(btnTodas);
 
@@ -19,7 +19,7 @@ Object.keys(questoes).forEach((disciplina) => {
     btn.textContent = disciplina;
     btn.onclick = () => {
         localStorage.setItem("disciplinaSelecionada", disciplina);
-        window.location.href = "simulado.html";
+        window.location.href = "../formulario/formulario.html";
     };
     grid.appendChild(btn);
 });
