@@ -1,0 +1,46 @@
+form {
+    max-width: 700px;
+    margin: 24px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px #0001;
+}
+form p {
+    text-align: justify;
+    font-weight: bold;
+    margin: 18px 0 18px 18px;
+}
+fieldset {
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+#enviar {
+    display: block;
+    margin: 24px auto;
+    padding: 10px 32px;
+    font-size: 1.1em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#enviar:hover {
+    background: #0056b3;
+}

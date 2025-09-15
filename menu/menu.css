@@ -1,0 +1,52 @@
+#menuDisciplina {
+    display: block;
+    margin: 32px auto 24px auto;
+    padding: 10px 24px;
+    font-size: 1.2em;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background: #f0f8ff;
+    color: #333;
+    box-shadow: 0 2px 8px #0001;
+    transition: border 0.2s;
+    max-width: 320px;
+}
+
+#menuDisciplina:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+.menu-container {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+}
+.menu-title {
+    font-size: 2em;
+    margin-bottom: 32px;
+}
+.disciplinas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+.disciplina-btn {
+    flex: 1 1 220px;
+    min-width: 180px;
+    max-width: 260px;
+    padding: 24px 12px;
+    font-size: 1.2em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.2s, transform 0.2s;
+}
+.disciplina-btn:hover,
+.disciplina-btn:focus {
+    background: #0056b3;
+    transform: scale(1.05);
+}
