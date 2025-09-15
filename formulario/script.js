@@ -17,7 +17,7 @@ document.getElementById("enviar").addEventListener("click", function (e) {
     const disciplinaSelecionada =
         localStorage.getItem("disciplinaSelecionada") || "todas";
 
-    let resultadoHTML = "<h3>Resultados:</h3>";
+    let resultadoHTML = "";
     let disciplinas =
         disciplinaSelecionada === "todas"
             ? Object.entries(questoes)

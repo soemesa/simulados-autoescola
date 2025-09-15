@@ -174,6 +174,8 @@ button:focus {
 }
 
 #finalizarBtn {
+    display: block;
+    margin: 24px auto 32px auto; /* 32px de margem inferior */
     background: #28a745;
 }
 
@@ -181,13 +183,48 @@ button:focus {
 #finalizarBtn:focus {
     background: #218838;
 }
-@media (max-width: 600px) {
-    .disciplinas-grid {
+
+.botoes-resultado {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 32px auto 0 auto;
+    max-width: 480px; /* limite de largura para centralizar */
+}
+
+.botoes-resultado button {
+    flex: 1 1 180px;
+    max-width: 220px;
+    min-width: 140px;
+    height: 48px; /* altura fixa */
+    font-size: 1em;
+    padding: 8px 0;
+    white-space: normal;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Só muda o layout para coluna em telas pequenas */
+@media (max-width: 400px) {
+    .botoes-resultado {
         flex-direction: column;
         gap: 12px;
+        align-items: stretch;
+        max-width: 220px; /* limita o container para não ficar largo demais */
+        margin-left: auto;
+        margin-right: auto;
     }
-    .disciplina-btn {
+    .botoes-resultado button {
         width: 100%;
+        max-width: 220px;
+        min-width: 140px;
+        height: 38px; /* altura confortável */
         font-size: 1em;
+        padding: 6px 0; /* padding menor */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
