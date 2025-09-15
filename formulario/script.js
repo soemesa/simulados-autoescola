@@ -84,7 +84,7 @@ function salvarResultados() {
         localStorage.getItem("disciplinaSelecionada") || "todas";
 
     // Resultado simples
-    let resultadoHTML = "<h3>Resultados por disciplina:</h3>";
+    let resultadoHTML = "<h3>Pontuação por disciplina:</h3>";
     let disciplinas =
         disciplinaSelecionada === "todas"
             ? Object.entries(questoes)
@@ -125,15 +125,13 @@ function salvarResultados() {
                         .querySelector(`input[name="q${dIndex}_${i}"]:checked`)
                         ?.value.trim() === alt
                 ) {
-                    detalhesHTML +=
-                        `<div>
-                            <span class="errada">${letra}. "${alt}"</span>
-                        </div>`;
+                    detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
                 }
             });
             detalhesHTML += `</div>`;
         });
     });
+
 
     // Salva no localStorage
     localStorage.setItem("resultadoSimulado", resultadoHTML);
@@ -203,38 +201,3 @@ function removerPerguntasRepetidas(questoes) {
         questoes[disciplina] = perguntasUnicas;
     });
 }
-
-// Preencher menu de disciplinas
-function preencherMenuDisciplinas() {
-    const menu = document.getElementById("menuDisciplina");
-    Object.keys(questoes).forEach((disciplina) => {
-        const option = document.createElement("option");
-        option.value = disciplina;
-        option.textContent = disciplina;
-        menu.appendChild(option);
-    });
-}
-preencherMenuDisciplinas();
-
-document
-    .getElementById("menuDisciplina")
-    .addEventListener("change", function () {
-        montarQuiz(this.value);
-
-        // Esconde o menu e mostra só a disciplina selecionada
-        const menu = document.getElementById("menuDisciplina");
-        const disciplinaSelecionada = menu.options[menu.selectedIndex].text;
-        menu.style.display = "none";
-
-        // Mostra o nome da disciplina escolhida
-        let disciplinaTitulo = document.getElementById("disciplinaSelecionada");
-        if (!disciplinaTitulo) {
-            disciplinaTitulo = document.createElement("h3");
-            disciplinaTitulo.id = "disciplinaSelecionada";
-            menu.parentNode.insertBefore(disciplinaTitulo, menu.nextSibling);
-        }
-        disciplinaTitulo.textContent =
-            disciplinaSelecionada === "Todas as disciplinas"
-                ? "Todas as disciplinas"
-                : `Disciplina: ${disciplinaSelecionada}`;
-    });
