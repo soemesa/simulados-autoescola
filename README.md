@@ -33,4 +33,4 @@ O objetivo deste projeto é oferecer uma ferramenta gratuita e prática para que
 
 ---
 
-Desenvolvido por [Soilenyis Mesa Montejo].
+Desenvolvido por Soilenyis Mesa Montejo.
