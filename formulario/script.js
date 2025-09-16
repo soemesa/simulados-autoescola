@@ -45,7 +45,7 @@ document.getElementById("enviar").addEventListener("click", function (e) {
     });
 
     localStorage.setItem("resultadoSimulado", resultadoHTML);
-    window.location.href = "../resultado/resultado.html";
+    window.location.href = "resultado/resultado.html";
 });
 
 // Função para montar o quiz
