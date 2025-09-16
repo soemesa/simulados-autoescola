@@ -134,7 +134,6 @@ function salvarResultados() {
         });
     });
 
-
     // Salva no localStorage
     localStorage.setItem("resultadoSimulado", resultadoHTML);
     localStorage.setItem("detalhesSimulado", detalhesHTML);
