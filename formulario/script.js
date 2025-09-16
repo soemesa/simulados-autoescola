@@ -1,66 +1,73 @@
 import { questoes } from "../questoes.js";
 
-// Remove perguntas repetidas antes de montar o quiz
+const QTD_PERGUNTAS_TODAS = 10; // Altere aqui se quiser mudar a quantidade
+
 removerPerguntasRepetidas(questoes);
 
-// Monta o quiz na tela
 const disciplinaSelecionada =
     localStorage.getItem("disciplinaSelecionada") || "todas";
 montarQuiz(disciplinaSelecionada);
 
-// Mostra perguntas repetidas apenas se existirem
 detectarPerguntasRepetidasNaTela();
 
-// Adiciona evento ao botão "Enviar"
 document.getElementById("enviar").addEventListener("click", function (e) {
     e.preventDefault();
-    salvarResultados(); // Salva resultado E detalhamento!
-    window.location.href = "../resultado/resultado.html";
-    const disciplinaSelecionada =
-        localStorage.getItem("disciplinaSelecionada") || "todas";
-
-    let resultadoHTML = "";
-    let disciplinas =
-        disciplinaSelecionada === "todas"
-            ? Object.entries(questoes)
-            : [[disciplinaSelecionada, questoes[disciplinaSelecionada]]];
-
-    disciplinas.forEach(([disciplina, questoesDisciplina], dIndex) => {
-        let certas = 0;
-        questoesDisciplina.forEach((q, i) => {
-            let marcada = document.querySelector(
-                `input[name="q${dIndex}_${i}"]:checked`
-            );
-            if (
-                marcada &&
-                marcada.value.trim() === (q.correta ? q.correta.trim() : "")
-            ) {
-                certas++;
-            }
-        });
-        let nota = (certas / questoesDisciplina.length) * 10;
-        resultadoHTML += `<h4>${disciplina}</h4><p><b>Nota:</b> ${nota.toFixed(
-            1
-        )}</p>`;
-    });
-
-    localStorage.setItem("resultadoSimulado", resultadoHTML);
+    salvarResultados();
     window.location.href = "../resultado/resultado.html";
 });
 
 // Função para montar o quiz
 function montarQuiz(disciplinaSelecionada = "todas") {
     const form = document.getElementById("quizForm");
-    form.innerHTML = ""; // Limpa o formulário
+    form.innerHTML = "";
 
-    let disciplinas =
-        disciplinaSelecionada === "todas"
-            ? Object.entries(questoes)
-            : [[disciplinaSelecionada, questoes[disciplinaSelecionada]]];
+    if (disciplinaSelecionada === "todas") {
+        // Junta todas as perguntas de todas as disciplinas
+        let todasPerguntas = [];
+        Object.entries(questoes).forEach(([disciplina, questoesDisciplina]) => {
+            questoesDisciplina.forEach((q) => {
+                todasPerguntas.push({ ...q, disciplina });
+            });
+        });
 
-    disciplinas.forEach(([disciplina, questoesDisciplina], dIndex) => {
+        // Sorteia perguntas aleatórias
+        const perguntasSorteadas = sortearAleatorias(
+            todasPerguntas,
+            QTD_PERGUNTAS_TODAS
+        );
+
+        // Cria um único fieldset para todas as perguntas
         let fieldset = document.createElement("fieldset");
-        fieldset.innerHTML = `<legend><b>${disciplina}</b></legend>`;
+        // Se quiser, pode adicionar um legend geral:
+        // fieldset.innerHTML = `<legend><b>Simulado Geral</b></legend>`;
+
+        perguntasSorteadas.forEach((q, i) => {
+            let div = document.createElement("div");
+            div.innerHTML = `<p><b>Questão ${i + 1}:</b> <b>${
+                q.pergunta
+            }</b></p>`;
+            q.alternativas.forEach((alt, idx) => {
+                div.innerHTML += `
+                <label>
+                    <input type="radio" name="q${i}" value="${alt}">
+                    ${String.fromCharCode(65 + idx)}. "${alt}"
+                </label><br>`;
+            });
+            fieldset.appendChild(div);
+        });
+
+        form.appendChild(fieldset);
+
+        // Salva as perguntas sorteadas para correção e detalhamento
+        localStorage.setItem(
+            "perguntasSorteadas",
+            JSON.stringify(perguntasSorteadas)
+        );
+    } else {
+        // Fluxo para disciplina única (como já está)
+        let questoesDisciplina = questoes[disciplinaSelecionada];
+        let fieldset = document.createElement("fieldset");
+        fieldset.innerHTML = `<legend><b>${disciplinaSelecionada}</b></legend>`;
         questoesDisciplina.forEach((q, i) => {
             let div = document.createElement("div");
             div.innerHTML = `<p><b>Questão ${i + 1}:</b> <b>${
@@ -69,34 +76,82 @@ function montarQuiz(disciplinaSelecionada = "todas") {
             q.alternativas.forEach((alt, idx) => {
                 div.innerHTML += `
                 <label>
-                    <input type="radio" name="q${dIndex}_${i}" value="${alt}">
+                    <input type="radio" name="q0_${i}" value="${alt}">
                     ${String.fromCharCode(65 + idx)}. "${alt}"
                 </label><br>`;
             });
             fieldset.appendChild(div);
         });
         form.appendChild(fieldset);
-    });
+    }
+}
+
+// Função para sortear perguntas aleatórias
+function sortearAleatorias(array, n) {
+    const copia = [...array];
+    const resultado = [];
+    while (resultado.length < n && copia.length > 0) {
+        const idx = Math.floor(Math.random() * copia.length);
+        resultado.push(copia.splice(idx, 1)[0]);
+    }
+    return resultado;
 }
 
 // Função para salvar resultados e detalhamento no localStorage
 function salvarResultados() {
-    // Recupera a disciplina escolhida
     const disciplinaSelecionada =
         localStorage.getItem("disciplinaSelecionada") || "todas";
 
-    // Resultado simples
-    let resultadoHTML = "<h3>Pontuação por disciplina:</h3>";
-    let disciplinas =
-        disciplinaSelecionada === "todas"
-            ? Object.entries(questoes)
-            : [[disciplinaSelecionada, questoes[disciplinaSelecionada]]];
+    let resultadoHTML = "";
+    let detalhesHTML = "";
 
-    disciplinas.forEach(([disciplina, questoesDisciplina], dIndex) => {
+    if (disciplinaSelecionada === "todas") {
+        const perguntasSorteadas = JSON.parse(
+            localStorage.getItem("perguntasSorteadas") || "[]"
+        );
+        let certas = 0;
+        perguntasSorteadas.forEach((q, i) => {
+            let marcada = document.querySelector(`input[name="q${i}"]:checked`);
+            if (
+                marcada &&
+                marcada.value.trim() === (q.correta ? q.correta.trim() : "")
+            ) {
+                certas++;
+            }
+        });
+        let nota = (certas / perguntasSorteadas.length) * 10;
+        resultadoHTML += `<h4>Simulado Geral</h4><p><b>Nota:</b> ${nota.toFixed(
+            1
+        )}</p>`;
+
+        // Detalhamento
+        detalhesHTML = "<h3>Detalhamento das respostas:</h3>";
+        perguntasSorteadas.forEach((q, i) => {
+            detalhesHTML += `<div class="detalhe-pergunta">
+                <b>${q.disciplina} - Questão ${i + 1}:</b> <b>${
+                q.pergunta
+            }</b><br>`;
+            q.alternativas.forEach((alt, idx) => {
+                const letra = String.fromCharCode(65 + idx);
+                if (alt === q.correta) {
+                    detalhesHTML += `<div><span class="correta">${letra}. "${alt}"</span></div>`;
+                } else if (
+                    document
+                        .querySelector(`input[name="q${i}"]:checked`)
+                        ?.value.trim() === alt
+                ) {
+                    detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
+                }
+            });
+            detalhesHTML += `</div>`;
+        });
+    } else {
+        // Fluxo para disciplina única
+        let questoesDisciplina = questoes[disciplinaSelecionada];
         let certas = 0;
         questoesDisciplina.forEach((q, i) => {
             let marcada = document.querySelector(
-                `input[name="q${dIndex}_${i}"]:checked`
+                `input[name="q0_${i}"]:checked`
             );
             if (
                 marcada &&
@@ -106,15 +161,12 @@ function salvarResultados() {
             }
         });
         let nota = (certas / questoesDisciplina.length) * 10;
-        resultadoHTML += `<h4>${disciplina}</h4><p><b>Nota:</b> ${nota.toFixed(
+        resultadoHTML += `<h4>${disciplinaSelecionada}</h4><p><b>Nota:</b> ${nota.toFixed(
             1
         )}</p>`;
-    });
 
-    // Detalhamento das respostas
-    let detalhesHTML = "<h3>Detalhamento das respostas:</h3>";
-    disciplinas.forEach(([disciplina, questoesDisciplina], dIndex) => {
-        detalhesHTML += `<h4>${disciplina}</h4>`;
+        // Detalhamento
+        detalhesHTML = "<h3>Detalhamento das respostas:</h3>";
         questoesDisciplina.forEach((q, i) => {
             detalhesHTML += `<div class="detalhe-pergunta">
                 <b>Questão ${i + 1}:</b> <b>${q.pergunta}</b><br>`;
@@ -124,7 +176,7 @@ function salvarResultados() {
                     detalhesHTML += `<div><span class="correta">${letra}. "${alt}"</span></div>`;
                 } else if (
                     document
-                        .querySelector(`input[name="q${dIndex}_${i}"]:checked`)
+                        .querySelector(`input[name="q0_${i}"]:checked`)
                         ?.value.trim() === alt
                 ) {
                     detalhesHTML += `<div><span class="errada">${letra}. "${alt}"</span></div>`;
@@ -132,9 +184,8 @@ function salvarResultados() {
             });
             detalhesHTML += `</div>`;
         });
-    });
+    }
 
-    // Salva no localStorage
     localStorage.setItem("resultadoSimulado", resultadoHTML);
     localStorage.setItem("detalhesSimulado", detalhesHTML);
 }
@@ -202,5 +253,3 @@ function removerPerguntasRepetidas(questoes) {
         questoes[disciplina] = perguntasUnicas;
     });
 }
-
-
