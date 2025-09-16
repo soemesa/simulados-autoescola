@@ -14,6 +14,8 @@ detectarPerguntasRepetidasNaTela();
 // Adiciona evento ao botão "Enviar"
 document.getElementById("enviar").addEventListener("click", function (e) {
     e.preventDefault();
+    salvarResultados(); // Salva resultado E detalhamento!
+    window.location.href = "resultado/resultado.html";
     const disciplinaSelecionada =
         localStorage.getItem("disciplinaSelecionada") || "todas";
 
