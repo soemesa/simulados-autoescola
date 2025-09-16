@@ -15,7 +15,7 @@ detectarPerguntasRepetidasNaTela();
 document.getElementById("enviar").addEventListener("click", function (e) {
     e.preventDefault();
     salvarResultados(); // Salva resultado E detalhamento!
-    window.location.href = "resultado/resultado.html";
+    window.location.href = "../resultado/resultado.html";
     const disciplinaSelecionada =
         localStorage.getItem("disciplinaSelecionada") || "todas";
 
@@ -45,7 +45,7 @@ document.getElementById("enviar").addEventListener("click", function (e) {
     });
 
     localStorage.setItem("resultadoSimulado", resultadoHTML);
-    window.location.href = "resultado/resultado.html";
+    window.location.href = "../resultado/resultado.html";
 });
 
 // Função para montar o quiz
