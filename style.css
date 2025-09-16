@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
     margin: 0;
     padding: 0 20px;
     line-height: 1.6;
@@ -9,9 +8,24 @@ h2 {
     text-align: center;
     margin-top: 24px;
 }
+body.tema-claro {
+    background: #f7f7f7;
+    color: #222;
+}
+body.tema-escuro {
+    background: #181818;
+    color: #eee;
+}
 
+/* Exemplo para quadros de conteúdo */
+body.tema-escuro .menu-container,
+body.tema-escuro #resultado,
+body.tema-escuro #detalhes,
+body.tema-escuro #quizForm,
+body.tema-escuro .detalhe-pergunta {
+    background: #232323 !important; /* preto diferente do fundo */
+    color: #fff !important;
+    border-color: #444 !important;
+}
 
-
-
-
-
+/* Se tiver outros quadros, adicione aqui também */

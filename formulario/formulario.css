@@ -44,3 +44,8 @@ input[type="radio"] {
 #enviar:hover {
     background: #0056b3;
 }
+body.tema-escuro fieldset {
+    background: #232323 !important;
+    color: #fff !important;
+    border-color: #444 !important;
+}

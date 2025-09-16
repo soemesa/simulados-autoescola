@@ -202,3 +202,5 @@ function removerPerguntasRepetidas(questoes) {
         questoes[disciplina] = perguntasUnicas;
     });
 }
+
+
